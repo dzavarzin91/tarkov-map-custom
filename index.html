@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Карты Таркова — офлайн</title>
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="app" id="app">
+  <aside class="rail" id="rail">
+    <header class="rail-head">
+      <div class="brand-row">
+        <span class="brand" data-i18n="brand">Карты Таркова</span>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="ru">RU</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+      <h1 class="map-title" id="mapTitle">…</h1>
+      <p class="raid-facts" id="raidFacts"></p>
+    </header>
+
+    <nav class="map-list" id="mapList" aria-label="Maps"></nav>
+
+    <section class="block">
+      <h2 data-i18n="search">Поиск</h2>
+      <input type="search" id="search" autocomplete="off" data-i18n-placeholder="searchHint" placeholder="Выход, ключ, босс…">
+      <ol class="results" id="results"></ol>
+    </section>
+
+    <section class="block" id="baseBlock">
+      <h2 data-i18n="base">Подложка</h2>
+      <div class="seg" id="baseSeg">
+        <button type="button" data-base="svg" data-i18n="schematic">Схема</button>
+        <button type="button" data-base="sat" data-i18n="satellite">Спутник</button>
+      </div>
+      <p class="hint" id="baseHint"></p>
+    </section>
+
+    <section class="block" id="levelBlock">
+      <h2 data-i18n="level">Этаж</h2>
+      <div class="levels" id="levels"></div>
+      <p class="hint" id="levelHint"></p>
+      <label class="check small"><input type="checkbox" id="dimOther" checked> <span data-i18n="dimOther">Приглушать метки других этажей</span></label>
+    </section>
+
+    <section class="block">
+      <h2 data-i18n="layers">Метки</h2>
+      <ul class="layer-list" id="layerList"></ul>
+    </section>
+
+    <footer class="rail-foot" id="dataStatus"></footer>
+  </aside>
+
+  <main class="stage">
+    <button type="button" class="rail-toggle" id="railToggle" aria-controls="rail" aria-expanded="true" data-i18n="panel">Панель</button>
+    <div id="map" class="map"></div>
+    <div class="notice" id="notice" hidden></div>
+    <div class="coords" id="coords" aria-live="off"></div>
+  </main>
+</div>
+
+<script src="vendor/leaflet/leaflet.js"></script>
+<script src="js/config.js"></script>
+<!-- Created by download_data.py. If missing, maps still work without markers. -->
+<script src="data/tarkov-data.js" onerror="window.TARKOV_DATA_MISSING=true"></script>
+<script src="data/tiles-manifest.js" onerror="window.TILES_MANIFEST={}"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
