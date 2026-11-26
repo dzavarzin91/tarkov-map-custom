@@ -22,6 +22,7 @@ tiles already on disk are skipped.
 
 import argparse
 import concurrent.futures
+import html
 import json
 import math
 import os
@@ -276,6 +277,179 @@ def convert_maps(base, table):
     return out
 
 
+# ---------------------------------------------------------------- quest items
+# Quest data comes from <mode>/tasks (+ tasks_en / tasks_ru for text). For every map we keep:
+#   find  - spots where a quest item can be picked up (findQuestItem objectives)
+#   plant - zones where an item has to be left (plantQuestItem / plantItem objectives)
+# Each marker links to tarkov.help: the item's page when it has one (ordinary items do, quest
+# items don't), otherwise tarkov.help's quest map.
+
+HELP_SITE = "https://tarkov.help/"
+RU_TO_LAT = {"а": "a", "б": "b", "в": "v", "г": "g", "д": "d", "е": "e", "ё": "e", "ж": "zh", "з": "z",
+             "и": "i", "й": "y", "к": "k", "л": "l", "м": "m", "н": "n", "о": "o", "п": "p", "р": "r",
+             "с": "s", "т": "t", "у": "u", "ф": "f", "х": "h", "ц": "ts", "ч": "ch", "ш": "sh",
+             "щ": "shch", "ъ": "", "ы": "y", "ь": "", "э": "e", "ю": "yu", "я": "ya"}
+
+
+def help_slug(name, lang):
+    s = (name or "").lower()
+    if lang == "ru":
+        s = "".join(RU_TO_LAT.get(c, c) for c in s)
+    return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+
+
+_help_cache = {}
+
+
+def help_item_url(lang, name):
+    """tarkov.help item page for this name, or None if the site has no such page."""
+    slug = help_slug(name, lang)
+    if not slug:
+        return None
+    url = f"{HELP_SITE}{lang}/item/{slug}"
+    if url not in _help_cache:
+        req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": USER_AGENT})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                _help_cache[url] = url if resp.status == 200 else None
+        except Exception:
+            _help_cache[url] = None
+        time.sleep(0.1)
+    return _help_cache[url]
+
+
+HELP_QUESTS_CACHE = os.path.join(ROOT, "data", "tarkov-help-quests.json")
+
+
+def norm_name(s):
+    return re.sub(r"[^a-z0-9а-яё]+", "", html.unescape(s or "").lower())
+
+
+def help_quest_links():
+    """{normalized English quest name: {"en": url, "ru": url}} for quests that have a tarkov.help page.
+
+    tarkov.help's quest URLs don't follow the quest name (e.g. "Saving the Mole" is /quest/rescue-the-mole),
+    so the pages listed in its sitemap are read once: the title gives the quest name and the page links its
+    Russian twin. Results are cached in data/tarkov-help-quests.json; only new pages are fetched later.
+    """
+    try:
+        cache = json.load(open(HELP_QUESTS_CACHE, encoding="utf-8"))
+    except (OSError, ValueError):
+        cache = {}
+    try:
+        status, raw = http(HELP_SITE + "sitemaps/sitemap-en.xml", retries=2)
+        slugs = sorted(set(re.findall(r"/en/quest/([^<\"\s]+)", raw.decode("utf-8", "replace")))) if status == 200 else []
+    except Exception as e:
+        log(f"  tarkov.help quest list unavailable ({e}); using cached links only")
+        slugs = []
+    todo = [s for s in slugs if s not in cache]
+    if todo:
+        log(f"  reading {len(todo)} tarkov.help quest pages to match them to quests (one-time, a minute or two) ...")
+
+        def read(slug):
+            try:
+                status, page = http(f"{HELP_SITE}en/quest/{slug}", retries=2)
+                time.sleep(0.1)
+                if status != 200:
+                    return slug, None
+                text = page.decode("utf-8", "replace")
+                title = re.search(r"<title>(.*?)</title>", text, re.S)
+                ru = re.search(r'hrefLang="ru"\s+href="https://tarkov\.help/ru/quest/([^"]+)"', text)
+                name = re.split(r"\s+[–—-]\s+Quest Guide", html.unescape(title.group(1)))[0] if title else ""
+                return slug, {"name": name, "ru": ru.group(1) if ru else None}
+            except Exception:
+                return None, None
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+            for slug, info in pool.map(read, todo):
+                if slug and info and info["name"]:
+                    cache[slug] = info
+        with open(HELP_QUESTS_CACHE, "w", encoding="utf-8") as f:
+            json.dump(cache, f, ensure_ascii=False, indent=0, sort_keys=True)
+    out = {}
+    for slug, info in cache.items():
+        links = {"en": f"{HELP_SITE}en/quest/{slug}"}
+        if info.get("ru"):
+            links["ru"] = f"{HELP_SITE}ru/quest/{info['ru']}"
+        out.setdefault(norm_name(info["name"]), links)
+    return out
+
+
+def convert_quests(tasks, table, lang, links=None, en_table=None):
+    """Return {map id: [quest markers]} for one language. table: translation key -> text."""
+    out = {}
+    links = links or {}
+    en_table = en_table or table
+    pos = lambda p: {"x": p["x"], "y": p.get("y"), "z": p["z"]} if isinstance(p, dict) and "x" in p and "z" in p else None
+    for task in as_list(tasks):
+        quest = table.get(task.get("name"), task.get("name")) or ""
+        en_name = en_table.get(task.get("name"), "")
+        wiki = task.get("wikiLink") or None
+        if lang == "ru" and quest:  # Russian wiki: same page title as the Russian quest name
+            wiki = "https://escapefromtarkov.fandom.com/ru/wiki/" + urllib.parse.quote(quest.replace(" ", "_"), safe="()!,:'-_.")
+        base = {"quest": quest, "wiki": wiki,
+                "helpQuest": (links.get(norm_name(en_name)) or {}).get(lang),
+                "devQuest": f"https://tarkov.dev/task/{task['normalizedName']}" if task.get("normalizedName") else None}
+        for obj in as_list(task.get("objectives")):
+            kind = obj.get("type")
+            desc = table.get(obj.get("description"), "") or ""
+            common = dict(base, desc=desc, count=obj.get("count") or 1, optional=bool(obj.get("optional")))
+            if kind == "findQuestItem":
+                item = table.get(f"{obj.get('questItem')} Name", "")
+                for loc in as_list(obj.get("possibleLocations")):
+                    pts = [p for p in (pos(x) for x in (loc.get("positions") or [])) if p]
+                    if pts:
+                        out.setdefault(loc.get("map"), []).append(dict(common, kind="find", item=item, points=pts))
+            elif kind in ("plantQuestItem", "plantItem"):
+                if kind == "plantQuestItem":
+                    names = [table.get(f"{obj.get('questItem')} Name", "")]
+                    help_url = None
+                else:
+                    names = [table.get(f"{i} Name", "") for i in (obj.get("items") or [])]
+                    help_url = help_item_url(lang, names[0]) if len(names) == 1 else None
+                names = [n for n in names if n]
+                item = names[0] if len(names) == 1 else ""
+                for zone in as_list(obj.get("zones")):
+                    p = pos(zone.get("position"))
+                    if p:
+                        z = {"position": p, "top": zone.get("top"), "bottom": zone.get("bottom"),
+                             "outline": [q for q in (pos(o) for o in (zone.get("outline") or [])) if q]}
+                        out.setdefault(zone.get("map"), []).append(dict(common, kind="plant", item=item, zone=z, helpItem=help_url))
+    return out
+
+
+def fetch_quest_markers(game_mode, tables):
+    """Per language: {map id: [markers]}. Quest data is a bonus; failures only cost the quest layer."""
+    try:
+        raw = get_json(f"{game_mode}/tasks")
+        base = raw.get("data") if isinstance(raw, dict) else None
+        tasks = (base or {}).get("tasks")
+        if not tasks:
+            raise NetworkError("no 'tasks' in the data")
+        task_names = {}
+        for lang in LANGS:
+            try:
+                part = get_json(f"{game_mode}/tasks_{lang}")
+                task_names[lang] = (part.get("data") or {}) if isinstance(part, dict) else {}
+            except NetworkError as e:
+                log(f"  quest names ({lang}) not available: {e}")
+                task_names[lang] = {}
+        quest_links = help_quest_links()
+        en_table = {**tables["en"], **task_names["en"]}
+        result = {}
+        for lang in LANGS:
+            # untranslated keys fall back to English
+            table = {**tables["en"], **task_names["en"], **tables[lang], **task_names[lang]}
+            result[lang] = convert_quests(tasks, table, lang, quest_links, en_table)
+        markers = [m for v in result["ru"].values() for m in v]
+        log(f"  quests: {len(markers)} markers, {sum(1 for m in markers if m.get('helpQuest'))} with a tarkov.help "
+            f"quest page, {sum(1 for m in markers if m.get('helpItem'))} with an item page")
+        return result
+    except NetworkError as e:
+        log(f"  quest data skipped: {e}")
+        return {}
+
+
 def fetch_marker_data(game_mode):
     log(f"Downloading map data from json.tarkov.dev ({game_mode}) ...")
     raw = get_json(f"{game_mode}/maps")
@@ -305,6 +479,10 @@ def fetch_marker_data(game_mode):
         "source": JSON_API,
         "maps": {lang: strip_nulls(convert_maps(base, {**tables["en"], **tables[lang]})) for lang in LANGS},
     }
+    quests = fetch_quest_markers(game_mode, tables)
+    for lang, maps in out["maps"].items():
+        for m in maps:
+            m["questMarkers"] = quests.get(lang, {}).get(m.get("id"), [])
     return out
 
 
@@ -326,7 +504,8 @@ def summarize(data, config):
             log(f"  {cfg['name']['en']:<18} no data from the API")
             continue
         parts = [f"{len(m.get(k) or [])} {label}" for k, label in
-                 (("extracts", "extracts"), ("spawns", "spawns"), ("locks", "locks"), ("lootContainers", "containers"))]
+                 (("extracts", "extracts"), ("spawns", "spawns"), ("locks", "locks"), ("lootContainers", "containers"),
+                  ("questMarkers", "quest markers"))]
         log(f"  {cfg['name']['en']:<18} " + ", ".join(parts))
 
 

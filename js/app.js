@@ -45,6 +45,9 @@
       requires: "Требует", lock: "Замок", container: "Контейнер", weapon: "Стационарное оружие",
       switch: "Рубильник", hazard: "Опасная зона", btrStop: "Остановка БТР", elevation: "Высота",
       sniper: "Снайпер", scav: "Дикий", pmc: "ЧВК",
+      quest_item: "Квестовые предметы", quest_zone: "Места для квестов", questItem: "Квестовый предмет",
+      questPlace: "Место для предмета", quest: "Квест", amount: "Количество",
+      helpItem: "Предмет на Tarkov Help", helpQuest: "Квест на Tarkov Help", helpQuests: "Квесты на Tarkov Help", devQuest: "Квест на tarkov.dev", wiki: "Вики",
       noData: "Меток пока нет. Запустите <code>python download_data.py</code> в папке проекта и обновите страницу.",
       noBase: "У этой карты нет векторной версии. Запустите <code>python download_data.py</code>, чтобы сохранить её тайлы.",
       satHint: "Для спутниковой подложки: <code>python download_data.py --satellite</code>",
@@ -90,6 +93,9 @@
       requires: "Requires", lock: "Lock", container: "Container", weapon: "Stationary weapon",
       switch: "Switch", hazard: "Hazard", btrStop: "BTR stop", elevation: "Elevation",
       sniper: "Sniper", scav: "Scav", pmc: "PMC",
+      quest_item: "Quest items", quest_zone: "Quest placement spots", questItem: "Quest item",
+      questPlace: "Item placement spot", quest: "Quest", amount: "Amount",
+      helpItem: "Item on Tarkov Help", helpQuest: "Quest on Tarkov Help", helpQuests: "Quests on Tarkov Help", devQuest: "Quest on tarkov.dev", wiki: "Wiki",
       noData: "No markers yet. Run <code>python download_data.py</code> in the project folder, then reload.",
       noBase: "This map has no vector version. Run <code>python download_data.py</code> to save its tiles.",
       satHint: "For satellite imagery: <code>python download_data.py --satellite</code>",
@@ -137,6 +143,8 @@
     { key: "switches", icon: "switch", on: false },
     { key: "hazards", icon: "hazard", on: false },
     { key: "btr", icon: "btr_stop", on: true },
+    { key: "quest_item", icon: "quest_item", on: true },
+    { key: "quest_zone", icon: "quest_objective", on: false },
     { key: "labels", icon: null, on: true },
   ];
 
@@ -590,6 +598,32 @@
         add("btr", p, L.divIcon({ className: "mk mk-named btr", html: '<img src="icons/btr_stop.png" alt=""><span>' + esc(b.name) + "</span>", iconSize: [24, 24], iconAnchor: [12, 12], popupAnchor: [0, -12] }),
           popup(b.name, t("btrStop"), [], p), b.name, { icon: "btr_stop" });
       } catch (e) { problem("btrStops", e); }
+    }
+
+    // quest items: where to pick them up (find) and where to leave them (plant), linked to tarkov.help
+    for (const q of list(md.questMarkers)) {
+      try {
+        const link = (url, text) => '<div class="pop-row"><a href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(text) + " ↗</a></div>";
+        const rows = [row(t("quest"), q.quest)];
+        if (q.desc) rows.push('<div class="pop-row">' + esc(q.desc) + "</div>");
+        if (q.count > 1) rows.push(row(t("amount"), q.count));
+        if (q.helpItem) rows.push(link(q.helpItem, t("helpItem")));
+        if (q.helpQuest) rows.push(link(q.helpQuest, t("helpQuest")));
+        else rows.push(link("https://tarkov.help/" + state.lang + "/quests-map", t("helpQuests")));
+        if (q.devQuest) rows.push(link(q.devQuest, t("devQuest")));
+        if (q.wiki) rows.push(link(q.wiki, t("wiki")));
+        const title = q.item || q.quest;
+        const search = (q.item ? q.item + " " : "") + q.quest;
+        if (q.kind === "find") {
+          for (const p of list(q.points)) {
+            add("quest_item", p, icon("quest_item"), popup(title, t("questItem"), rows, p), search, { icon: "quest_item" });
+          }
+        } else if (q.zone) {
+          const z = q.zone;
+          const rec = add("quest_zone", z.position, icon("quest_objective"), popup(title, t("questPlace"), rows, z.position), search, { icon: "quest_objective" });
+          if (rec) addOutline("quest_zone", z.outline, "#ffd447", z.position, z.top, z.bottom);
+        }
+      } catch (e) { problem("questMarkers", e); }
     }
 
     showGroups();

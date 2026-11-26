@@ -1,0 +1,2374 @@
+{
+"Best-Job-in-the-World": {
+"name": "Best Job in the World",
+"ru": "luchshaya-rabota-na-svete"
+},
+"Broadcast-4": {
+"name": "Broadcast - Part 4",
+"ru": "strim-4"
+},
+"Green-Corridor": {
+"name": "Green Corridor",
+"ru": "zeleniy-koridor"
+},
+"Slaughterhouse": {
+"name": "Slaughterhouse",
+"ru": "potroshitel"
+},
+"a-big-loss": {
+"name": "A Big Loss — where to find OLI documents | Tarkov",
+"ru": "bolshaya-poterya"
+},
+"a-bitter-victory": {
+"name": "A Bitter Victory",
+"ru": "gorkaya-pobeda"
+},
+"a-familiar-face": {
+"name": "A Familiar Face...",
+"ru": "znakomoe-litso"
+},
+"a-friend-among-strangers": {
+"name": "Friend Among Strangers",
+"ru": "svoy-sredi-chujih"
+},
+"a-fuel-matter": {
+"name": "A Fuel Matter",
+"ru": "toplivnyj-vopros"
+},
+"a-helping-hand": {
+"name": "A Helping Hand",
+"ru": "ruka-pomoshi"
+},
+"a-killer-argument": {
+"name": "Killer Argument",
+"ru": "ubojnyj-argument"
+},
+"a-life-lesson": {
+"name": "A Life Lesson",
+"ru": "zhiznennyj-urok"
+},
+"a-shooter-born-in-heaven": {
+"name": "Shooter Born in Heaven",
+"ru": "strelok-ot-boga"
+},
+"a-simple-task-in-a-difficult-place": {
+"name": "A Simple Task in a Difficult Place",
+"ru": "prostaya-zadacha-v-neprostom-meste"
+},
+"abandoned-cargo": {
+"name": "Abandoned Cargo",
+"ru": "broshennyj-gruz"
+},
+"above-your-head": {
+"name": "The Higher They Fly",
+"ru": "vyshe-golovy"
+},
+"accidental-witness": {
+"name": "Accidental Witness",
+"ru": "sluchainiy-svidetel"
+},
+"acquaintance": {
+"name": "Acquaintance",
+"ru": "znakomstvo"
+},
+"against-conscience-1": {
+"name": "Against the Conscience - Part 1 [PVP ZONE]",
+"ru": "sdelka-sovestiu-1"
+},
+"against-conscience-2": {
+"name": "Against the Conscience - Part 2 [PVP ZONE]",
+"ru": "sdelka-sovestiu-2"
+},
+"aid-stations": {
+"name": "Aid Stations",
+"ru": "perevalochnie-punkti"
+},
+"airmail": {
+"name": "Airmail",
+"ru": "aviapochta"
+},
+"akimbo": {
+"name": "Akimbo",
+"ru": "s-obeih-ruk"
+},
+"all-inclusive-support": {
+"name": "\"All-inclusive\" support",
+"ru": "podderzhka-vsyo-vklyucheno"
+},
+"all-is-revealed": {
+"name": "All Is Revealed",
+"ru": "vse-tainoe-stanovitsa-yavnim"
+},
+"all-this-filth": {
+"name": "All This Filth...",
+"ru": "vsei-eto-shvali"
+},
+"ambulance": {
+"name": "First Aid",
+"ru": "skoraya-pomoshh"
+},
+"ambulances-again": {
+"name": "Paramedic",
+"ru": "feldsher"
+},
+"anesthesia": {
+"name": "Anesthesia",
+"ru": "anesteziya"
+},
+"answer": {
+"name": "Proper Comeback",
+"ru": "otvetochka"
+},
+"antique-enthusiast": {
+"name": "Antique Enthusiast",
+"ru": "lubitel-stariny"
+},
+"ask-for-directions": {
+"name": "Ask for directions",
+"ru": "sprosit-dorogu"
+},
+"assessment-part-1": {
+"name": "Assessment - Part 1",
+"ru": "proverka-chast-1"
+},
+"assessment-part-2": {
+"name": "Assessment - Part 2",
+"ru": "proverka-chast-2"
+},
+"assessment-part-3": {
+"name": "Assessment - Part 3",
+"ru": "proverka-chast-3"
+},
+"audiophile": {
+"name": "Audiophile",
+"ru": "meloman"
+},
+"audit": {
+"name": "Audit",
+"ru": "audit"
+},
+"back-door": {
+"name": "Back Door",
+"ru": "chyornyj-vyhod"
+},
+"background-check": {
+"name": "Background Check",
+"ru": "proverka-na-vshivost"
+},
+"bad-habit": {
+"name": "Bad Habit",
+"ru": "vrednaya-privychka"
+},
+"bad-rep-evidence": {
+"name": "Bad Rep Evidence",
+"ru": "kompromat"
+},
+"balancing-1": {
+"name": "Balancing - Part 1 [PVP ZONE]",
+"ru": "balans-1"
+},
+"balancing-part-2": {
+"name": "Balancing - Part 2 [PVP ZONE]",
+"ru": "balans-2"
+},
+"ballet-lover": {
+"name": "Ballet Lover",
+"ru": "lubitel-baleta"
+},
+"barter": {
+"name": "Natural Exchange",
+"ru": "naturalniy-obmen"
+},
+"batya": {
+"name": "Batya",
+"ru": "batya"
+},
+"beneath-the-streets": {
+"name": "Beneath The Streets",
+"ru": "neparadny-tarkov"
+},
+"between-two-fires": {
+"name": "Between Two Fires [PVP ZONE]",
+"ru": "mej-dvuh-ognei"
+},
+"big-customer": {
+"name": "Big Customer",
+"ru": "bolshoj-zakazchik"
+},
+"big-sale": {
+"name": "Big Sale",
+"ru": "rasprodazha"
+},
+"biochemistry": {
+"name": "Biochemistry",
+"ru": "biohimiya"
+},
+"black-swan": {
+"name": "Black Swan",
+"ru": "cherniy-lebed"
+},
+"blue-fire": {
+"name": "Blue Fire",
+"ru": "siniy-ogon"
+},
+"booze": {
+"name": "Booze",
+"ru": "vypivka"
+},
+"boreas": {
+"name": "Boreas",
+"ru": "borey"
+},
+"bp-depot": {
+"name": "Oil Run",
+"ru": "neftyanka"
+},
+"break-the-deal": {
+"name": "Break the Deal",
+"ru": "sorvat-sdelku"
+},
+"broadcast-1": {
+"name": "Broadcast - Part 1",
+"ru": "strim-1"
+},
+"broadcast-2": {
+"name": "Broadcast - Part 2",
+"ru": "strim-2"
+},
+"broadcast-3": {
+"name": "Broadcast - Part 3",
+"ru": "strim-3"
+},
+"broadcast-5": {
+"name": "Broadcast - Part 5",
+"ru": "strim-5"
+},
+"btr-quests": {
+"name": "Start of the BTR Quests.",
+"ru": "btr-quests"
+},
+"build-bridges": {
+"name": "Building Foundations",
+"ru": "mavesti-mosty"
+},
+"bullshit": {
+"name": "Bullshit",
+"ru": "deza"
+},
+"burning-rubber": {
+"name": "Burning Rubber",
+"ru": "po-konyam"
+},
+"calibration": {
+"name": "Calibration",
+"ru": "pristrelka"
+},
+"call-sign-malachite": {
+"name": "Callsign Malachite",
+"ru": "pozyvnoy-malahit"
+},
+"camera-action": {
+"name": "Camera. Action!",
+"ru": "kamera-motor"
+},
+"cant-drink-away-skill": {
+"name": "Can't Drink Away Skill",
+"ru": "navyk-ne-propyosh"
+},
+"capacity-check": {
+"name": "Capacity Check",
+"ru": "proverka-moshnostey"
+},
+"capturing-outposts": {
+"name": "Capturing Outposts",
+"ru": "zahvat-avanposta"
+},
+"car-repair": {
+"name": "Car Repair",
+"ru": "avtorem"
+},
+"cargo-x": {
+"name": "Cargo X",
+"ru": "gruz-x"
+},
+"cargo-x-part-4": {
+"name": "Gifts from Tarkov",
+"ru": "gruz-x-chast-4"
+},
+"cast-the-net-kord-breach": {
+"name": "[KORD BREACH] Cast the Net",
+"ru": "zabrosit-nevod-kord-breach"
+},
+"change-battery": {
+"name": "Battery Change",
+"ru": "pomenyat-batareiku"
+},
+"chemical-experiments": {
+"name": "Chemical Experiments",
+"ru": "himicheskie-elementi"
+},
+"chemical-part-1": {
+"name": "Chemical - Part 1",
+"ru": "reagent-chast-1"
+},
+"chemical-part-2": {
+"name": "Chemical - Part 2",
+"ru": "reagent-chast-2"
+},
+"chemical-part-3": {
+"name": "Chemical - Part 3",
+"ru": "reagent-chast-3"
+},
+"chemical-part-4": {
+"name": "Chemical - Part 4",
+"ru": "reagent-chast-4"
+},
+"choice-halloween-initial-check": {
+"name": "Halloween: Initial Examination",
+"ru": "vybor-halloween-pervichnaya-proverka"
+},
+"choice-halloween-tightening-the-quarantine": {
+"name": "[CHOICE] Halloween: Tightening the Quarantine",
+"ru": "vybor-halloween-usilenie-karantina"
+},
+"choice-halloween-unexpected-help": {
+"name": "[CHOICE] Halloween: Unexpected Help",
+"ru": "vybor-halloween-neozhidannaya-pomosch"
+},
+"choose-your-friends-wisely": {
+"name": "Choose your friends wisely",
+"ru": "vybiraj-druzej-pravilno"
+},
+"chumming": {
+"name": "Chumming",
+"ru": "prikormka"
+},
+"city-gendarme-district-patrol": {
+"name": "District Patrol",
+"ru": "gorodskoy-zhandarm-novyy-uchastkovyy"
+},
+"classified-technologies": {
+"name": "Classified Technologies",
+"ru": "sekretnye-razrabotki"
+},
+"claustrophobia": {
+"name": "Claustrophobia",
+"ru": "klaustrofobiya"
+},
+"clear-the-field": {
+"name": "Scope the Clearing",
+"ru": "sech-polyanu"
+},
+"clear-the-room": {
+"name": "Vacate the Premises",
+"ru": "psvobodit-pomeshenie"
+},
+"close-the-sky": {
+"name": "Protect the Sky",
+"ru": "zakrit-nebo"
+},
+"cold-start": {
+"name": "Cold start",
+"ru": "holodniy-zapusk"
+},
+"colleagues-part-1": {
+"name": "Colleagues",
+"ru": "kollegi-chast-1"
+},
+"colleagues-part-2": {
+"name": "Tarkov-Style Diplomacy",
+"ru": "kollegi-chast-2"
+},
+"colleagues-part-3": {
+"name": "A Difficult Choice",
+"ru": "kollegi-chast-3"
+},
+"collector": {
+"name": "Collector – Required Items & Quest Guide | Tarkov",
+"ru": "kollekczioner"
+},
+"combat-proven": {
+"name": "Combat Proven",
+"ru": "proverenny-tovar"
+},
+"confidential-information": {
+"name": "Confidential Info",
+"ru": "konfidencialnaya-informaciya"
+},
+"consolation-prize": {
+"name": "Consolation Prize",
+"ru": "uteshitelnyj-priz"
+},
+"corporate-perks": {
+"name": "Corporate Perks",
+"ru": "korporativnie-bonusi"
+},
+"corporate-secrets": {
+"name": "Corporate Secrets",
+"ru": "tajny-korporatov"
+},
+"counteraction": {
+"name": "Counteraction",
+"ru": "protivostoyanie"
+},
+"courtesy-visit": {
+"name": "Courtesy Visit",
+"ru": "vizit-vezhlivosti"
+},
+"create-distraction-1": {
+"name": "Create a Distraction - Part 1 [PVP ZONE]",
+"ru": "otvlekaushiy-manevr-1"
+},
+"create-distraction-2": {
+"name": "Create a Distraction - Part 2 [PVP ZONE]",
+"ru": "otvlekaushiy-manevr-2"
+},
+"crisis": {
+"name": "Crisis",
+"ru": "doktor-ajbolit"
+},
+"dandies": {
+"name": "Dandies",
+"ru": "stilyagi"
+},
+"dangerous-props": {
+"name": "Dangerous Props",
+"ru": "opasnyj-rekvizit"
+},
+"database-part-1": {
+"name": "Inventory Files",
+"ru": "kartoteka-chast-1"
+},
+"debtor": {
+"name": "Debtor",
+"ru": "doljnik"
+},
+"debut": {
+"name": "Debut",
+"ru": "proba-pera"
+},
+"decisions-decisions": {
+"name": "Decisions, Decisions [PVP ZONE]",
+"ru": "na-rasputie"
+},
+"decontamination-service": {
+"name": "Decontamination Service",
+"ru": "sluzhba-dezinfekczii"
+},
+"delivery-delay": {
+"name": "Delivery delay",
+"ru": "zaderzhka-postavki"
+},
+"delivery-from-the-past": {
+"name": "Delivery From the Past",
+"ru": "posylka-iz-proshlogo"
+},
+"demonstration-model": {
+"name": "Demonstration Model",
+"ru": "demonstracionniy-ekzemplyar"
+},
+"developers-secret-2": {
+"name": "The Secret to Productivity",
+"ru": "sekret-uspevaemosti-2"
+},
+"deviation-from-the-route": {
+"name": "Route Deviation",
+"ru": "otklonenie-ot-marshruta"
+},
+"disease-history": {
+"name": "Disease History",
+"ru": "mediczinskij-zhurnal"
+},
+"documents": {
+"name": "Documents",
+"ru": "dokumenty"
+},
+"doxed-choice": {
+"name": "Doxed",
+"ru": "deanon-vybor"
+},
+"dragnet": {
+"name": "Dragnet",
+"ru": "plan-perehvat"
+},
+"dressed-to-kill": {
+"name": "Dressed to Kill",
+"ru": "modnyj-prigovor"
+},
+"drip-out-1": {
+"name": "Drip-Out - Part 1",
+"ru": "obnovka-1"
+},
+"drip-out-2": {
+"name": "Drip-Out - Part 2",
+"ru": "obnovka-2"
+},
+"drug-trafficking": {
+"name": "Drug Trafficking",
+"ru": "narkotrafik"
+},
+"eagle-eye": {
+"name": "Eagle Eye",
+"ru": "glaz-orla"
+},
+"easy-job": {
+"name": "Easy Job",
+"ru": "prostaya-zadacha"
+},
+"easy-money-1": {
+"name": "Easy Money - Part 1 [Season PvP]",
+"ru": "legkiye-dengi-1"
+},
+"easy-money-2": {
+"name": "Easy Money - Part 2 [PVP ZONE]",
+"ru": "legkiye-dengi-2"
+},
+"easy-side-job": {
+"name": "Easy side job",
+"ru": "nepilnaya-podrabotka"
+},
+"energy-crisis": {
+"name": "Energy Crisis",
+"ru": "energeticheskij-krizis"
+},
+"eradicate": {
+"name": "Cut Down to the Root [choice]",
+"ru": "vyrubit-pod-koren"
+},
+"escort": {
+"name": "Escort",
+"ru": "konvoir"
+},
+"essential-tasks-fence": {
+"name": "Essential tasks (Fence)",
+"ru": "kluchevie-kvesti-skupshik"
+},
+"essential-tasks-jaeger": {
+"name": "Essential tasks (Jaeger)",
+"ru": "kluchevie-kvesti-eger"
+},
+"essential-tasks-mechanic": {
+"name": "Essential tasks (Mechanic)",
+"ru": "kluchevie-kvesti-mekhanik"
+},
+"essential-tasks-peacekeeper": {
+"name": "Essential tasks (Peacekeeper)",
+"ru": "kluchevie-kvesti-mirotvorets"
+},
+"essential-tasks-prapor": {
+"name": "Essential tasks (Prapor)",
+"ru": "kluchevie-kvesty-prapor"
+},
+"essential-tasks-ragman": {
+"name": "Essential tasks (Ragman)",
+"ru": "kluchevie-kvesti-barakholshik"
+},
+"essential-tasks-ref": {
+"name": "Essential tasks (Ref)",
+"ru": "kluchevie-kvesti-ref"
+},
+"essential-tasks-skier": {
+"name": "Essential tasks (Skier)",
+"ru": "kluchevie-kvesti-lyzhnik"
+},
+"essential-tasks-therapist": {
+"name": "Essential tasks (Therapist)",
+"ru": "kluchevie-kvesti-terapevt"
+},
+"establish-contact": {
+"name": "Establish Contact",
+"ru": "naladit-kontakt"
+},
+"every-hunter-knows": {
+"name": "Every Hunter Knows This",
+"ru": "kajdiy-okhotnik-znaet"
+},
+"exit-here": {
+"name": "Exit Here",
+"ru": "zapasniy-vikhod"
+},
+"extending-the-operation": {
+"name": "Extending the Operation",
+"ru": "prodlenie-operatsii"
+},
+"fair-price-part-1": {
+"name": "Fair Price - Part 1",
+"ru": "chestnaya-cena-chast-1"
+},
+"fair-price-part-2": {
+"name": "Fair Price - Part 2",
+"ru": "chestnaya-cena-chast-2"
+},
+"fall-ailment": {
+"name": "Fall Ailment",
+"ru": "osennee-nedomoganie"
+},
+"falling-skies": {
+"name": "Falling Skies — where to find the plane | Tarkov",
+"ru": "nebesa-v-ogne"
+},
+"farming": {
+"name": "Farming",
+"ru": "sadovodstvo"
+},
+"fertilizers": {
+"name": "Fertilizers",
+"ru": "udobreniya"
+},
+"fight-fire-with-fire": {
+"name": "Fight fire with fire",
+"ru": "klin-klinom-vyshibayut"
+},
+"first-in-line": {
+"name": "First in Line",
+"ru": "pervii-v-ocheredi"
+},
+"fishing-gear": {
+"name": "Fishing Gear",
+"ru": "rybolovnye-snasti"
+},
+"fishing-place": {
+"name": "Fishing Place",
+"ru": "rybnoe-mesto"
+},
+"fog-of-war": {
+"name": "Fog of War",
+"ru": "tuman-voyny"
+},
+"following-the-bread-crumbs": {
+"name": "Following the Bread Crumbs",
+"ru": "sled-iz-khlebnykh-kroshek"
+},
+"forbidden-knowledge-kord-breach": {
+"name": "[KORD BREACH] Forbidden Knowledge",
+"ru": "zapretnie-znaniya-kord-breach"
+},
+"forced-alliance": {
+"name": "Offensive Reconnaissance",
+"ru": "vinyjdennyi-souz"
+},
+"forklift-certified": {
+"name": "Forklift Certified",
+"ru": "konstruktor-lubitel"
+},
+"friend-from-the-west": {
+"name": "Friend From the West",
+"ru": "drug-s-zapada"
+},
+"from-hand-to-hand": {
+"name": "From Hand to Hand",
+"ru": "iz-ruk-v-ruki"
+},
+"fuel-crisis": {
+"name": "Fuel Crisis",
+"ru": "toplivniy-krizis"
+},
+"fuel-shortage": {
+"name": "Fuel Shortage",
+"ru": "nehvatka-topliva"
+},
+"general-wares": {
+"name": "General Wares",
+"ru": "selpo"
+},
+"get-a-foothold": {
+"name": "Get a Foothold",
+"ru": "zakrepitsya-na-pozicii"
+},
+"getting-acquainted": {
+"name": "Getting Acquainted",
+"ru": "novoe-znakomstvo"
+},
+"glory-to-cpsu2": {
+"name": "Glory to CPSU",
+"ru": "slava-kpss2"
+},
+"goals-and-means": {
+"name": "Goals and Means",
+"ru": "celi-i-sredstva"
+},
+"golden-swag": {
+"name": "Golden Swag",
+"ru": "zolotye-ponty"
+},
+"good-times-1": {
+"name": "The Good Times - Part 1",
+"ru": "kak-vstarie-dobrie-1"
+},
+"good-times-2": {
+"name": "The Good Times - Part 2",
+"ru": "kak-vstarie-dobrie-2"
+},
+"gratitude": {
+"name": "Gratitude",
+"ru": "blagodarnost"
+},
+"grenadier": {
+"name": "Grenadier",
+"ru": "grenadyor"
+},
+"gunsmith-old-friends-request": {
+"name": "Gunsmith Master - Part 12 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-po-staroj-druzhbe"
+},
+"gunsmith-part-1": {
+"name": "Gunsmith - MP-133 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-1"
+},
+"gunsmith-part-10": {
+"name": "Gunsmith - AK-105 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-10"
+},
+"gunsmith-part-11": {
+"name": "Gunsmith - Vector 9x19 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-11"
+},
+"gunsmith-part-12": {
+"name": "Gunsmith - MPX – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-12"
+},
+"gunsmith-part-13": {
+"name": "Gunsmith Master - Part 2 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-13"
+},
+"gunsmith-part-14": {
+"name": "Gunsmith Master - Part 1 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-14"
+},
+"gunsmith-part-15": {
+"name": "Gunsmith - AS VAL – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-15"
+},
+"gunsmith-part-16": {
+"name": "Gunsmith Master - Part 3 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-16"
+},
+"gunsmith-part-17": {
+"name": "Gunsmith Master - Part 4 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-17"
+},
+"gunsmith-part-18": {
+"name": "Gunsmith Master - Part 5 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-18"
+},
+"gunsmith-part-19": {
+"name": "Gunsmith Master - Part 6 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-19"
+},
+"gunsmith-part-2": {
+"name": "Gunsmith - AKS-74U – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-2"
+},
+"gunsmith-part-20": {
+"name": "Gunsmith Master - Part 7 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-20"
+},
+"gunsmith-part-21": {
+"name": "Gunsmith Master - Part 8 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-21"
+},
+"gunsmith-part-22": {
+"name": "Gunsmith Master - Part 9 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-22"
+},
+"gunsmith-part-23": {
+"name": "Gunsmith Master - Part 10 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-23"
+},
+"gunsmith-part-24": {
+"name": "Gunsmith Master - Part 11 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-24"
+},
+"gunsmith-part-25": {
+"name": "Gunsmith Master - Part 13 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-25"
+},
+"gunsmith-part-3": {
+"name": "Gunsmith - HK MP5 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-3"
+},
+"gunsmith-part-4": {
+"name": "Gunsmith - OP-SKS – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-4"
+},
+"gunsmith-part-5": {
+"name": "Gunsmith - Model 870 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-5"
+},
+"gunsmith-part-6": {
+"name": "Gunsmith - AKM – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-6"
+},
+"gunsmith-part-7": {
+"name": "Gunsmith - M4A1 – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-7"
+},
+"gunsmith-part-8": {
+"name": "Gunsmith - AKS-74N – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-8"
+},
+"gunsmith-part-9": {
+"name": "Gunsmith - P226R – Weapon Build & Quest Guide | Tarkov",
+"ru": "oruzhejnik-chast-9"
+},
+"halloween-blind-the-enemy": {
+"name": "[Achievement] Halloween: Blind the Enemy",
+"ru": "halloween-oslepit-protivnika"
+},
+"halloween-coincidence": {
+"name": "Halloween: Coincidence?",
+"ru": "halloween-sovpadenie"
+},
+"halloween-danger-zone": {
+"name": "Halloween: Danger Zone",
+"ru": "halloween-zona-riska"
+},
+"halloween-enemy-of-my-enemy": {
+"name": "Halloween: Enemy of My Enemy",
+"ru": "halloween-vrag-moego-vraga"
+},
+"halloween-enemy-of-my-enemy-an-agreement": {
+"name": "Halloween: Enemy of My Enemy - An Agreement",
+"ru": "halloween-vrag-moego-vraga-dogovor"
+},
+"halloween-final-push": {
+"name": "[Achievement] Halloween: Final Push",
+"ru": "halloween-posledniy-ryvok"
+},
+"halloween-first-results": {
+"name": "Halloween: First results",
+"ru": "halloween-pervye-rezultaty"
+},
+"halloween-for-the-common-goal": {
+"name": "Halloween: For the Common Goal",
+"ru": "halloween-radi-obschey-tseli"
+},
+"halloween-for-the-common-goal-the-deal": {
+"name": "Halloween: For the Common Goal. The Deal",
+"ru": "halloween-radi-obschey-tseli-dogovor"
+},
+"halloween-high-risk-high-reward": {
+"name": "Halloween: High-Risk, High-Reward",
+"ru": "halloween-high-risk-high-reward"
+},
+"halloween-hollow-up-examination": {
+"name": "Halloween: Follow-Up Examination",
+"ru": "halloween-kontrolnaya-proverka"
+},
+"halloween-new-vaccine": {
+"name": "[CHOICE] Halloween: A New Vaccine",
+"ru": "halloween-novaya-vaktsina"
+},
+"halloween-prototyping": {
+"name": "Halloween: Prototyping",
+"ru": "halloween-prototipirovanie"
+},
+"halloween-rumors": {
+"name": "Halloween: Rumors",
+"ru": "halloween-sluhi"
+},
+"halloween-studying-the-enemy": {
+"name": "Halloween: Studying the Enemy",
+"ru": "halloween-izuchenie-vraga"
+},
+"halloween-the-best-defense": {
+"name": "Halloween: The Best Defense",
+"ru": "halloween-luchshaya-zaschita"
+},
+"hangover-morning": {
+"name": "Hangover",
+"ru": "pohmelnoe-utro"
+},
+"health-care-privacy-part-1": {
+"name": "Health Care Privacy - Part 1",
+"ru": "vrachebnaya-tajna-chast-1"
+},
+"health-care-privacy-part-2": {
+"name": "Health Care Privacy - Part 2",
+"ru": "vrachebnaya-tajna-chast-2"
+},
+"health-care-privacy-part-3": {
+"name": "Health Care Privacy - Part 3",
+"ru": "vrachebnaya-tajna-chast-3"
+},
+"health-care-privacy-part-4": {
+"name": "Health Care Privacy - Part 4",
+"ru": "vrachebnaya-tajna-chast-4"
+},
+"health-care-privacy-part-5": {
+"name": "Health Care Privacy - Part 5",
+"ru": "vrachebnaya-tajna-chast-5"
+},
+"health-care-privacy-part-6": {
+"name": "Health Care Privacy - Part 6",
+"ru": "vrachebnaya-tajna-6"
+},
+"healthy-alternative": {
+"name": "A Healthy Alternative",
+"ru": "zdorovaya-alternativa"
+},
+"hell-on-earth-1": {
+"name": "Hell on Earth - Part 1",
+"ru": "ad-na-zemle-1"
+},
+"hell-on-earth-2": {
+"name": "Hell on Earth - Part 2",
+"ru": "ad-na-zemle-2"
+},
+"hidden-layer": {
+"name": "Hidden Layer",
+"ru": "vtoroe-dno"
+},
+"hidden-route": {
+"name": "Hidden Route",
+"ru": "skrytyy-marshrut"
+},
+"hiking": {
+"name": "Hiking",
+"ru": "hayking"
+},
+"honest-review": {
+"name": "Honest Review",
+"ru": "chestnyy-otzyv"
+},
+"hot-delivery": {
+"name": "Hot Delivery",
+"ru": "goryachaya-dostavka"
+},
+"hot-wheels": {
+"name": "Hot Wheels",
+"ru": "shinomontajka"
+},
+"hot-wheels-second-attempt": {
+"name": "Hot Wheels. Second Attempt",
+"ru": "shinomontazhka-vtoraya-popitka"
+},
+"house-arrest-part-1": {
+"name": "House Arrest [USEC]",
+"ru": "domashniy-arest-1"
+},
+"humanitarian-supplies": {
+"name": "Humanitarian Supplies",
+"ru": "gumanitarka"
+},
+"hunting-trip": {
+"name": "Hunting Trip",
+"ru": "na-ohotu"
+},
+"huntsman-path-controller": {
+"name": "The Huntsman path - Controller",
+"ru": "put-ohotnika-kontrolyor"
+},
+"huntsman-path-crooked-cop": {
+"name": "The Huntsman Path - Crooked Cop",
+"ru": "put-ohotnika-oboroten-v-pagonah"
+},
+"huntsman-path-eraser": {
+"name": "The Huntsman Path - Eraser",
+"ru": "put-ohotnika-stiratel"
+},
+"huntsman-path-evil-watchman": {
+"name": "The Huntsman Path - Angry Watchman",
+"ru": "put-ohotnika-zloj-vahtyor"
+},
+"huntsman-path-factory-chief": {
+"name": "The Huntsman Path - Factory Chief",
+"ru": "put-ohotnika-nachalnik-zavoda"
+},
+"huntsman-path-justice": {
+"name": "The Huntsman Path - Justice",
+"ru": "put-ohotnika-spravedlivost"
+},
+"huntsman-path-liberation": {
+"name": "The Huntsman Path - Liberation",
+"ru": "put-ohotnika-osvobozhdenie"
+},
+"huntsman-path-relentless": {
+"name": "The Huntsman Path - Relentless",
+"ru": "put-ohotnika-nepreklonnyj"
+},
+"huntsman-path-sadist": {
+"name": "The Huntsman Path - Sadist",
+"ru": "put-ohotnika-sadist"
+},
+"huntsman-path-secured-perimeter": {
+"name": "The Huntsman Path - Secured Perimeter",
+"ru": "put-ohotnika-ohranka"
+},
+"huntsman-path-sellout": {
+"name": "The Huntsman Path - Sellout",
+"ru": "put-ohotnika-pereuchyot"
+},
+"huntsman-path-the-trophy": {
+"name": "The Huntsman Path - Trophy",
+"ru": "put-ohotnika-trofej"
+},
+"huntsman-path-woods-cleaning": {
+"name": "The Huntsman Path - Forest Cleaning",
+"ru": "put-ohotnika-ochistka-lesa"
+},
+"huntsman-path-woods-keeper": {
+"name": "The Huntsman Path - Woods Keeper",
+"ru": "put-ohotnika-sanitar-lesa"
+},
+"hypothesis-testing": {
+"name": "Hypotheses Testing",
+"ru": "proverka-gipotez"
+},
+"i-need-more-power": {
+"name": "I Need More Power",
+"ru": "nujno-bolshe-energii"
+},
+"ice-cream-cones": {
+"name": "Ice Cream Cones",
+"ru": "rozhki-dlya-morozhenogo"
+},
+"ill-wisher": {
+"name": "Ill-Wisher",
+"ru": "nedobrojelatel"
+},
+"import-2": {
+"name": "Import",
+"ru": "import"
+},
+"inevitable-response": {
+"name": "Inevitable response",
+"ru": "neizbezhniy-otvet"
+},
+"information-source": {
+"name": "Information Source",
+"ru": "istochnik-informacii"
+},
+"information-trail": {
+"name": "Information Trail",
+"ru": "informatsionnyy-sled"
+},
+"informed-means-armed": {
+"name": "Informed Means Armed",
+"ru": "osvedomlyon-znachit-vooruzhyon"
+},
+"insomnia": {
+"name": "Insomnia",
+"ru": "bessonicza"
+},
+"interest-club": {
+"name": "Hobby Club",
+"ru": "klub-po-interesam"
+},
+"intimidator": {
+"name": "Intimidator",
+"ru": "ustrashitel"
+},
+"introduction": {
+"name": "Introduction",
+"ru": "poruchenie"
+},
+"invasive-therapy": {
+"name": "Invasive Therapy",
+"ru": "invazivnaya-terapiya"
+},
+"inventory-check": {
+"name": "Reserve Expert",
+"ru": "znatok-rezerva"
+},
+"invisible-hand": {
+"name": "The Invisible Hand",
+"ru": "nevidimaya-ruka-rinka"
+},
+"iron-authority": {
+"name": "Indisputable Authority",
+"ru": "jelezniy-avtoritet"
+},
+"ironclad-proof": {
+"name": "Ironclad Proof",
+"ru": "jeleznie-dokazatelstva"
+},
+"irrepressible": {
+"name": "Irresistible",
+"ru": "neuderzhimyj-interes"
+},
+"is-this-a-reference-": {
+"name": "Is This a Reference? — where to plant the cameras | Tarkov",
+"ru": "chto-to-mne-eto-napominaet"
+},
+"keep-them-in-line": {
+"name": "Keep Them in Line",
+"ru": "derzhat-na-tsepi"
+},
+"keepers-word": {
+"name": "Keeper’s Word",
+"ru": "slovo-hranitelya"
+},
+"key-to-the-tower": {
+"name": "Key to the Tower",
+"ru": "klyuch-ot-bashni"
+},
+"key-to-understanding-kord-breach": {
+"name": "[KORD BREACH] Key to Understanding",
+"ru": "kluch-k-ponimaniyu-kord-breach"
+},
+"kind-of-sabotage": {
+"name": "Kind of Sabotage",
+"ru": "svoego-roda-sabotazh"
+},
+"kings-of-the-rooftops": {
+"name": "Kings of the Rooftops",
+"ru": "koroli-vysotok"
+},
+"knock-knock": {
+"name": "Knock-Knock",
+"ru": "tuk-tuk-kto-tam"
+},
+"know-your-enemy-kord-breach": {
+"name": "[KORD BREACH] Know Your Enemy",
+"ru": "znay-svoego-vraga-kord-breach"
+},
+"know-your-place": {
+"name": "Know Your Place!",
+"ru": "znay-svoe-mesto"
+},
+"kord-breach-break-the-chain": {
+"name": "[KORD BREACH] Break the Chain",
+"ru": "razryv-tsepi-kord-breach"
+},
+"kord-breach-consequences-of-our-decisions": {
+"name": "[KORD BREACH] Consequences of Our Decisions",
+"ru": "posledstviya-nashih-resheniy-kord-breach"
+},
+"kord-breach-desperate-assault": {
+"name": "[KORD BREACH] Desperate Assault",
+"ru": "otchayannyy-shturm-kord-breach"
+},
+"kord-breach-digital-puzzle": {
+"name": "[KORD BREACH] Digital Puzzle",
+"ru": "tsifrovoy-pazl-kord-breach"
+},
+"kord-breach-final-stretch": {
+"name": "[KORD BREACH] Final Stretch",
+"ru": "finishnaya-pryamaya-kord-breach"
+},
+"kord-breach-historical-prospects": {
+"name": "[KORD BREACH] Historical Prospects",
+"ru": "istoricheskie-perspektivy-kord-breach"
+},
+"kord-breach-in-the-name-of-humanity": {
+"name": "[KORD BREACH] In the Name of Humanity...",
+"ru": "vo-imya-chelovechestva-kord-breach"
+},
+"kord-breach-price-for-information": {
+"name": "[KORD BREACH] Price for Information",
+"ru": "plata-za-informatsiyu-kord-breach"
+},
+"kord-breach-stay-clear-of-blast-zone": {
+"name": "[KORD BREACH] Stay Clear of Blast Zone",
+"ru": "kapkan-kord-breach"
+},
+"kord-breach-unanswered-calls": {
+"name": "[KORD BREACH] Unanswered Calls",
+"ru": "zvonki-bez-otveta-kord-breach"
+},
+"lend-lease-part-2": {
+"name": "Lend lease - Part 2",
+"ru": "lendliz-chast-2"
+},
+"lightkeeper-unlocking": {
+"name": "Lightkeeper unlocking",
+"ru": "otkrytie-smotritelya-mayaka"
+},
+"living-high-is-not-a-crime-part-2": {
+"name": "Living High is Not a Crime",
+"ru": "krasivo-zhit-ne-zapretish-chast-2"
+},
+"long-line": {
+"name": "Long Line",
+"ru": "dlinnaya-ochered"
+},
+"long-road": {
+"name": "Long Road",
+"ru": "dolgaya-doroga"
+},
+"lose-the-tail": {
+"name": "Lose the tail",
+"ru": "izbavitsya-ot-hvosta"
+},
+"lost-contact": {
+"name": "Lost Contact",
+"ru": "poteryannyj-kontakt"
+},
+"loyalty-1-jaeger": {
+"name": "Loyalty level - 1 (Jaeger)",
+"ru": "loyalnost-1-eger"
+},
+"loyalty-1-mechanic": {
+"name": "Loyalty level - 1 (Mechanic)",
+"ru": "loyalnost-1-mekhanik"
+},
+"loyalty-1-peacekeeper": {
+"name": "Loyalty level - 1 (Peacekeeper)",
+"ru": "loyalnost-1-mirotvorets"
+},
+"loyalty-1-prapor": {
+"name": "Loyalty level - 1 (Prapor)",
+"ru": "loyalnost-1-prapor"
+},
+"loyalty-1-ragman": {
+"name": "Loyalty level - 1 (Ragman)",
+"ru": "loyalnost-1-barakholshik"
+},
+"loyalty-1-skier": {
+"name": "Loaylty level - 1 (Skier)",
+"ru": "loyalnost-1-lyzhnik"
+},
+"loyalty-1-therapist": {
+"name": "Loyalty level - 1 (Therapist)",
+"ru": "loyalnost-1-terapevt"
+},
+"loyalty-2-jaeger": {
+"name": "Loyalty level - 2 (Jaeger)",
+"ru": "loyalnost-2-eger"
+},
+"loyalty-2-mechanic": {
+"name": "Loyalty level - 2 (Mechanic)",
+"ru": "loyalnost-2-mekhanic"
+},
+"loyalty-2-peacekeeper": {
+"name": "Loyalty level - 2 (Peacekeeper)",
+"ru": "loyalnost-2-mirotvorets"
+},
+"loyalty-2-prapor": {
+"name": "Loyalty level - 2 (Prapor)",
+"ru": "loyalnost-2-prapor"
+},
+"loyalty-2-ragman": {
+"name": "Loyalty level - 2 (Ragman)",
+"ru": "loyalnost-2-barakholshik"
+},
+"loyalty-2-skier": {
+"name": "Loyalty level - 2 (Skier)",
+"ru": "loyalnost-2-luzhnik"
+},
+"loyalty-2-therapist": {
+"name": "Loyalty level - 2 (Therapist)",
+"ru": "loyalnost-2-terapevt"
+},
+"loyalty-3-jaeger": {
+"name": "Loyalty level - 3 (Jaeger)",
+"ru": "loyalnost-3-eger"
+},
+"loyalty-3-mechanic": {
+"name": "Loyalty level - 3 (Mechanic)",
+"ru": "loyalnost-3-mekhanic"
+},
+"loyalty-3-peacekeeper": {
+"name": "Loyalty level - 3 (Peacekeeper)",
+"ru": "loyalnost-3-mirotvorets"
+},
+"loyalty-3-prapor": {
+"name": "Loyalty level - 3 (Prapor)",
+"ru": "loyalnost-3-prapor"
+},
+"loyalty-3-ragman": {
+"name": "Loyalty level - 3 (Ragman)",
+"ru": "loyalnost-3-barakholshik"
+},
+"loyalty-3-skier": {
+"name": "Loyalty level - 3 (Skier)",
+"ru": "loyalnost-3-lyzhnik"
+},
+"loyalty-3-therapist": {
+"name": "Loyalty level - 3 (Therapist)",
+"ru": "loyalnost-3-terapevt"
+},
+"loyalty-4-jaeger": {
+"name": "Loyalty level - 4 (Jaeger)",
+"ru": "loyalnost-4-eger"
+},
+"loyalty-4-mechanic": {
+"name": "Loyalty level - 4 (Mechanic)",
+"ru": "loyalnost-4-mekhanic"
+},
+"loyalty-4-peacekeeper": {
+"name": "Loyalty level - 4 (Peacekeeper)",
+"ru": "loyalnost-4-mirotvorets"
+},
+"loyalty-4-prapor": {
+"name": "Loyalty level - 4 (Prapor)",
+"ru": "loalnost-4-prapor"
+},
+"loyalty-4-ragman": {
+"name": "Loyalty level - 4 (Ragman)",
+"ru": "loyalnost-4-barakholshik"
+},
+"loyalty-4-skier": {
+"name": "Loyalty level - 4 (Skier)",
+"ru": "loyanost-4-lyzhnik"
+},
+"loyalty-4-therapist": {
+"name": "Loyalty level - 4 (Therapist)",
+"ru": "loyalnost-4-terapevt"
+},
+"luxurious-life": {
+"name": "Luxurious Life",
+"ru": "roskoshnaya-jizn"
+},
+"main-partner": {
+"name": "Key Partner",
+"ru": "klyuchevoj-partnyor"
+},
+"make-amends": {
+"name": "Make Amends",
+"ru": "zagladit-vinu"
+},
+"make-amends-all-quests": {
+"name": "Make Amends [All quests]",
+"ru": "zagladit-vinu-vse-zadaniya"
+},
+"make-amends-buyout": {
+"name": "Make Amends - Buyout",
+"ru": "zagladit-vinu-podkup"
+},
+"make-amends-equipment": {
+"name": "Make Amends - Equipment",
+"ru": "zagladit-vinu-vooruzhenie"
+},
+"make-amends-quarantine": {
+"name": "Make Amends - Quarantine",
+"ru": "zagladit-vinu-karantin"
+},
+"make-amends-security": {
+"name": "Make Amends - Security",
+"ru": "zagladit-vinu-nablyudenie"
+},
+"make-amends-software": {
+"name": "Make Amends - Software",
+"ru": "zagladit-vinu-po"
+},
+"make-amends-sweep-up": {
+"name": "Make Amends - Sweep Up",
+"ru": "zagladit-vinu-zachistka"
+},
+"make-an-impression": {
+"name": "Make an Impression",
+"ru": "proizvesti-vpechatlenie"
+},
+"make-the-move-easier": {
+"name": "Ease the Move",
+"ru": "oblegchit-pereezd"
+},
+"make-ultra-great-again": {
+"name": "Make ULTRA Great Again",
+"ru": "vernem-ultre-byloe-velichie"
+},
+"marine-electrics": {
+"name": "Marine electrics",
+"ru": "sudovaya-electrika"
+},
+"master-key": {
+"name": "Master Key",
+"ru": "master-kluch"
+},
+"metal-birds": {
+"name": "Metal Birds",
+"ru": "ptichki"
+},
+"minibus": {
+"name": "Minibus",
+"ru": "marshrutka"
+},
+"minute-of-fame": {
+"name": "Minute of Fame",
+"ru": "minuta-slavi"
+},
+"missing-cargo": {
+"name": "Missing Cargo",
+"ru": "propavshij-gruz"
+},
+"missing-informant": {
+"name": "Missing Informant",
+"ru": "propavshiy-informator"
+},
+"mutual-interest": {
+"name": "The Cleaner",
+"ru": "chistilshhik"
+},
+"needle-in-a-haystack": {
+"name": "Needle in a Haystack",
+"ru": "igolka-v-stoge-sena"
+},
+"network-provider-part-1": {
+"name": "Network Provider - Part 1",
+"ru": "setevoy-provider-1"
+},
+"network-provider-part-2": {
+"name": "Network Provider - Part 2",
+"ru": "setevoy-provider-2"
+},
+"never-too-late-to-learn": {
+"name": "Never Too Late To Learn",
+"ru": "uchitsya-nikogda-ne-pozdno"
+},
+"new-beginning": {
+"name": "New beginning",
+"ru": "novoe-nachalo"
+},
+"new-beginning-pve": {
+"name": "New beginning [PVE]",
+"ru": "novoe-nachalo-pve"
+},
+"new-routes": {
+"name": "New Paths",
+"ru": "novye-marshruty"
+},
+"night-sweep": {
+"name": "Night Sweep",
+"ru": "nochnaya-progulka"
+},
+"no-place-for-renegades": {
+"name": "No Place for Renegades",
+"ru": "renegatam-tut-ne-mesto"
+},
+"no-swiping": {
+"name": "No Swiping",
+"ru": "chuzhoe-dobro"
+},
+"nostalgia": {
+"name": "Nostalgia",
+"ru": "nostalgiya"
+},
+"notes-for-completing-100-percent-quest-ticket-for-kerman": {
+"name": "Notes for completing the quest 100% Ticket for Kerman",
+"ru": "zapiski-dlya-100-procentov-dlya-kermana"
+},
+"nothing-fishy-about-this": {
+"name": "Nothing Fishy About This",
+"ru": "vigodnaya-sdelka"
+},
+"oil-change": {
+"name": "Oil Change",
+"ru": "zamena-masla"
+},
+"old-patterns": {
+"name": "Old Patterns",
+"ru": "po-starim-lekalam"
+},
+"one-less-loose-end": {
+"name": "One Less Loose End",
+"ru": "podchistit-hvosti"
+},
+"one-way-ticket": {
+"name": "One-Way Ticket",
+"ru": "putyovka-v-odin-konets"
+},
+"operation-aquarius-part-1": {
+"name": "Operation Aquarius — where to find room 206 | Tarkov",
+"ru": "operacziya-vodolej"
+},
+"operation-aquarius-part-2": {
+"name": "Blood in the Water",
+"ru": "operacziya-vodolej-chast-2"
+},
+"order-from-outside": {
+"name": "Order from outside",
+"ru": "zakaz-so-storoni"
+},
+"organoleptic-analysis-1": {
+"name": "Sensory Analysis - Part 1",
+"ru": "organolepticheskiy-1"
+},
+"organoleptic-analysis-2": {
+"name": "Sensory Analysis - Part 2",
+"ru": "organolepticheskiy-2"
+},
+"our-own-land": {
+"name": "Our Own Land",
+"ru": "svoya-zemlya"
+},
+"out-of-curiosity": {
+"name": "Out of Curiosity",
+"ru": "prostoe-lyubopytstvo"
+},
+"outplay-and-destroy": {
+"name": "Discombobulate",
+"ru": "pereigrat-i-unichtozhit"
+},
+"overpopulation": {
+"name": "Overpopulation",
+"ru": "perenaselenie"
+},
+"painkiller": {
+"name": "Charity",
+"ru": "pejnkiller"
+},
+"passion-for-ergonomics": {
+"name": "Passion for Ergonomics",
+"ru": "strast-k-ergonomike"
+},
+"pathfinder": {
+"name": "Pathfinder",
+"ru": "sledopit"
+},
+"pay-the-fare": {
+"name": "Pay the Fare!",
+"ru": "za-proezd-peredayom"
+},
+"payback": {
+"name": "Payback",
+"ru": "rasplata"
+},
+"peaceful-atom": {
+"name": "Peaceful Atom",
+"ru": "mirniy-atom"
+},
+"pest-control": {
+"name": "Pest Control",
+"ru": "borba-s-vreditelyami"
+},
+"pets-wont-need-it": {
+"name": "Pets Won't Need It — where find pharmacies, kennel | Tarkov",
+"ru": "inventarizatsiya"
+},
+"pharmacist": {
+"name": "Pharmacist — where to find the suitcase | Tarkov",
+"ru": "provizor"
+},
+"playing-the-market": {
+"name": "Playing the Market",
+"ru": "igra-na-rinke"
+},
+"polikhim-hobo": {
+"name": "Polikhim Hobo",
+"ru": "bomzh-s-polihima"
+},
+"population-census": {
+"name": "Population Census",
+"ru": "perepis-naselenia"
+},
+"possessor-quest": {
+"name": "Possessor",
+"ru": "v-chujoi-shkure"
+},
+"postman-pat": {
+"name": "Postman Pat - Part 1",
+"ru": "pochtalon-pechkin"
+},
+"postman-pat-part-2": {
+"name": "Postman Pat - Part 2",
+"ru": "pochtalon-pechkin-chast-2"
+},
+"preliminary-survey": {
+"name": "Preliminary Survey",
+"ru": "predproektnoe-issledovanie"
+},
+"private-clinic": {
+"name": "Private clinic",
+"ru": "chastnaya-klinika"
+},
+"private-club": {
+"name": "Private Club — where to find the wallet on customs | Tarkov",
+"ru": "zakrytyj-klub"
+},
+"profit-retention": {
+"name": "Profit Retention",
+"ru": "fiksaciya-pribyli"
+},
+"profitable-venture": {
+"name": "Profitable Venture [USEC]",
+"ru": "vygodnoe-predpriyatie"
+},
+"properties-all-around": {
+"name": "Properties All Around",
+"ru": "zemelniy-vopros"
+},
+"provide-viewership": {
+"name": "Provide Viewership",
+"ru": "obespechit-prosmotry"
+},
+"provocation": {
+"name": "Provocation",
+"ru": "provokaciya"
+},
+"psycho-sniper": {
+"name": "Psycho Sniper",
+"ru": "snajper-psihopat"
+},
+"put-it-into-circulation": {
+"name": "Circulate",
+"ru": "pustit-v-oborot"
+},
+"pyramid-scheme": {
+"name": "Pyramid Scheme",
+"ru": "finansovaya-piramida"
+},
+"quality-standart": {
+"name": "Quality Standard",
+"ru": "standart-kachestva"
+},
+"rat-hunting": {
+"name": "Rat Hunting",
+"ru": "ohota-na-kris"
+},
+"reconnaissance": {
+"name": "Reconnaissance",
+"ru": "razvedka"
+},
+"regulated-materials": {
+"name": "Regulated Materials",
+"ru": "postavshhik"
+},
+"release-escape-from-tarkov-10": {
+"name": "Start of the storyline for release 1.0",
+"ru": "reliz-escape-from-tarkov-10"
+},
+"rescue-private-roman": {
+"name": "Saving Private Roman",
+"ru": "spasti-ryadovogo-romana"
+},
+"rescue-the-mole": {
+"name": "Saving the Mole",
+"ru": "spasenie-krota"
+},
+"reserve-quest": {
+"name": "Reserve",
+"ru": "rezerv-kvest"
+},
+"resistance": {
+"name": "Immunity",
+"ru": "resistentnost"
+},
+"return-the-favor": {
+"name": "Return the Favor",
+"ru": "otvetnaya-usluga"
+},
+"reverse-gear-kord-breach": {
+"name": "[KORD BREACH] Reverse Gear",
+"ru": "zadnyaya-peredacha-kord-breach"
+},
+"revision-lighthouse": {
+"name": "Revision - Lighthouse",
+"ru": "reviziya-mayak"
+},
+"revision-reserve": {
+"name": "Revision - Reserve",
+"ru": "reviziya-rezerv"
+},
+"revision-streets-of-tarkov": {
+"name": "Revision - Streets of Tarkov",
+"ru": "reviziya-ulici-tarkova"
+},
+"riding-the-wave-kord-breach": {
+"name": "[KORD BREACH] Riding the Wave",
+"ru": "na-volne-populyarnosti-kord-breach"
+},
+"rigged-game": {
+"name": "Rigged Game",
+"ru": "igra-na-vernyak"
+},
+"road-closed": {
+"name": "Road Closed",
+"ru": "proezd-zakryt"
+},
+"rough-tarkov": {
+"name": "Rough Tarkov",
+"ru": "tarkov-ne-proschaet-oshibok"
+},
+"safe-corridor": {
+"name": "Safe Corridor",
+"ru": "bezopasnyj-koridor"
+},
+"safeguard-the-valuable-piece": {
+"name": "Preserve a valuable piece [choice]",
+"ru": "sberech-tsennuyu-figuru"
+},
+"safety-guarantee": {
+"name": "Safety Guarantee",
+"ru": "garantiya-bezopasnosti"
+},
+"samples": {
+"name": "Samples",
+"ru": "obrazczy"
+},
+"sanitary-standards-part-1": {
+"name": "Sanitary Standards",
+"ru": "sanepidnadzor-chast-1"
+},
+"scavenger": {
+"name": "Scavenger",
+"ru": "skavenzher"
+},
+"scout": {
+"name": "Scout",
+"ru": "skaut"
+},
+"scrap-metal": {
+"name": "Scrap Metal",
+"ru": "metallolom"
+},
+"search-mission": {
+"name": "Search Mission",
+"ru": "poiskovaya-missiya"
+},
+"seaside-vacation": {
+"name": "Seaside Vacation",
+"ru": "otdyh-u-morya"
+},
+"secret-message": {
+"name": "Secret Message",
+"ru": "tainoe-poslanie"
+},
+"secrets-of-perfect-taste-part-1": {
+"name": "Beyond the Red Meat",
+"ru": "sekrety-idealnogo-vkusa-chast-1"
+},
+"secrets-of-the-factory": {
+"name": "Secrets of Polikhim",
+"ru": "sekreti-zavodskih-sten"
+},
+"seizing-the-initiative": {
+"name": "Seizing the Initiative",
+"ru": "perehvat-iniviativy"
+},
+"self-btr": {
+"name": "I'm Something of a BTR Myself",
+"ru": "sam-sebe-btr"
+},
+"self-employed": {
+"name": "Self employed",
+"ru": "samozanyatiy"
+},
+"semiconductor-crisis": {
+"name": "Semiconductor Crisis",
+"ru": "krizis-poluprovodnikov"
+},
+"serious-allgeations": {
+"name": "Serious Allegations",
+"ru": "seriezniye-obvineniya"
+},
+"setting-priorities": {
+"name": "Setting Priorities",
+"ru": "rasstanovka-prioritetov"
+},
+"setup": {
+"name": "Setup",
+"ru": "podstava"
+},
+"sew-it-good-part-1": {
+"name": "Sew it Good - Part 1",
+"ru": "shit-ne-tuzhit-chast-1"
+},
+"sew-it-good-part-2": {
+"name": "Sew it Good - Part 4",
+"ru": "shit-ne-tuzhit-chast-2"
+},
+"sew-it-good-part-3": {
+"name": "Sew it Good - Part 3",
+"ru": "shit-ne-tuzhit-chast-3"
+},
+"sew-it-good-part-4": {
+"name": "Sew it Good - Part 2",
+"ru": "shit-ne-tuzhit-chast-4"
+},
+"shady-sontractor": {
+"name": "Shady Contractor",
+"ru": "podozritelniy-podradchik"
+},
+"shaking-up-teller": {
+"name": "Shaking Up the Teller",
+"ru": "tryahnut-kassira"
+},
+"shipping-delay-1": {
+"name": "Shipping Delay - Part 1",
+"ru": "zaderjka-otpravleniya-1"
+},
+"shipping-delay-2": {
+"name": "Shipping Delay - Part 2",
+"ru": "zaderjka-otpravleniya-2"
+},
+"shooting-cans": {
+"name": "Shooting Cans",
+"ru": "strelba-po-banochkam"
+},
+"shootout-picnic": {
+"name": "Shootout Picnic",
+"ru": "piknik-so-strelboj"
+},
+"shortage": {
+"name": "Shortage",
+"ru": "deficzit"
+},
+"shortage-681": {
+"name": "Half-Empty",
+"ru": "nedosdacha"
+},
+"side-hustle": {
+"name": "Side Hustle",
+"ru": "podrabotka-dlya-dushi"
+},
+"silent-caliber": {
+"name": "Silent Caliber",
+"ru": "tihij-kalibr"
+},
+"sisyphus": {
+"name": "Sisyphus",
+"ru": "sizif"
+},
+"small-business-1": {
+"name": "Small business. Part 1",
+"ru": "maloe-predprinimatelstvo-1"
+},
+"small-business-2": {
+"name": "Small business. Part 2",
+"ru": "maloe-predprinimatelstvo-2"
+},
+"small-business-3": {
+"name": "Small business. Part 3",
+"ru": "maloe-predprinimatelstvo-3"
+},
+"small-things-big-help": {
+"name": "Small Things, Big Help — where to find fuel caches | Tarkov",
+"ru": "meloch-a-priyatno"
+},
+"snatch": {
+"name": "Snatch",
+"ru": "kontr-kompromat"
+},
+"solidify-friendship": {
+"name": "Forge a Friendship",
+"ru": "skrepit-drushbu"
+},
+"special-comms": {
+"name": "Special Comms",
+"ru": "spetzsvyaz"
+},
+"special-equipment": {
+"name": "Special Equipment",
+"ru": "zakaz"
+},
+"special-offer": {
+"name": "Special Offer",
+"ru": "specialnoe-predlojenie"
+},
+"spezzakaz": {
+"name": "Special Order",
+"ru": "spezzakaz"
+},
+"spotter": {
+"name": "Spotter",
+"ru": "navodchik"
+},
+"squirrel-and-arrow": {
+"name": "Belka and Strelka",
+"ru": "belka-i-strelka"
+},
+"stabilize-the-business": {
+"name": "Stabilize the business",
+"ru": "stabilizirovat-biznes"
+},
+"steady-signal": {
+"name": "Steady Signal",
+"ru": "ustoichiviy-signal"
+},
+"stimulating-demand": {
+"name": "Stimulating Demand",
+"ru": "stimulirovanie-sprosa"
+},
+"stirrup": {
+"name": "Stirrup",
+"ru": "dvizhuha"
+},
+"stray-dogs": {
+"name": "Stray Dogs",
+"ru": "zaletnie"
+},
+"subscriber-temporarily-unavailable": {
+"name": "Subscriber temporarily unavailable",
+"ru": "abonent-vremenno-nedostupen"
+},
+"supervisor": {
+"name": "Supervisor",
+"ru": "supervajzer"
+},
+"supplements": {
+"name": "Supplements",
+"ru": "bady"
+},
+"supplier": {
+"name": "Supplier",
+"ru": "snabzhenecz"
+},
+"supply-plans": {
+"name": "Supply Plans",
+"ru": "plany-snabzheniya"
+},
+"surplus-goods": {
+"name": "Surplus Goods",
+"ru": "voennyj-habar"
+},
+"surprise": {
+"name": "Surprise [PVP ZONE]",
+"ru": "surpriz"
+},
+"surveillance": {
+"name": "Surveillance",
+"ru": "nabludenie"
+},
+"swift-one": {
+"name": "Swift",
+"ru": "lovkach"
+},
+"swift-retribution": {
+"name": "Swift Retribution",
+"ru": "skoraya-rasplata"
+},
+"tarkov-butcher": {
+"name": "The Tarkov Butcher",
+"ru": "tarkovskij-myasnik"
+},
+"terragroup-employee": {
+"name": "TerraGroup Employee",
+"ru": "sotrudnik-terragroup"
+},
+"test-Drive-Part-4": {
+"name": "Getting Some Air",
+"ru": "test-drajv-chast-4"
+},
+"test-drive-part-1": {
+"name": "The Tarkov Import",
+"ru": "test-drajv-chast-1"
+},
+"test-drive-part-2": {
+"name": "Power of Persuasion",
+"ru": "test-drajv-chast-2"
+},
+"test-drive-part-5": {
+"name": "Easy-Breezy",
+"ru": "legkotnya"
+},
+"test-drive-part-6": {
+"name": "Unique Experience",
+"ru": "test-drajv-chast-6"
+},
+"textile-part-1": {
+"name": "Textile - Part 1",
+"ru": "tekstil-chast-1"
+},
+"textile-part-2": {
+"name": "Textile - Part 2",
+"ru": "tekstil-chast-2"
+},
+"the-art-of-demolitions": {
+"name": "The Art of Explosion",
+"ru": "iskusstvo-vzryvotehniki"
+},
+"the-bunker-part-1": {
+"name": "The Bunker",
+"ru": "bunker-chast-1"
+},
+"the-chemistry-closet": {
+"name": "Chemistry Closet",
+"ru": "kabinet-himii"
+},
+"the-choice": {
+"name": "The Choice",
+"ru": "vybor"
+},
+"the-courier": {
+"name": "The Courier",
+"ru": "kurer"
+},
+"the-cult-part-1": {
+"name": "The Cult",
+"ru": "sekta-chast-1"
+},
+"the-delicious-sausage": {
+"name": "The Delicious Sausage",
+"ru": "prodrazvedka"
+},
+"the-door": {
+"name": "The Door",
+"ru": "dver"
+},
+"the-duty-of-a-forester": {
+"name": "Forester's Duty",
+"ru": "dolg-lesnika"
+},
+"the-extortionist": {
+"name": "The Extortionist",
+"ru": "vymogatel"
+},
+"the-guide": {
+"name": "The Guide",
+"ru": "provodnik"
+},
+"the-hermit": {
+"name": "The Hermit",
+"ru": "otshelnik"
+},
+"the-huntsman-path-administator": {
+"name": "The Huntsman Path - Administrator",
+"ru": "put-ohotnika-administrator"
+},
+"the-huntsman-path-big-game": {
+"name": "The Huntsman Path - Big Game",
+"ru": "put-okhotnika-krupnaya-dich"
+},
+"the-huntsman-path-control": {
+"name": "The Huntsman Path - Control",
+"ru": "put-ohotnika-kontrol"
+},
+"the-huntsman-path-outcasts": {
+"name": "The Huntsman Path - Outcasts",
+"ru": "put-ohotnika-otstupniki"
+},
+"the-key-to-success": {
+"name": "The Key to Success",
+"ru": "sekret-uspeha"
+},
+"the-key-to-the-city": {
+"name": "Key to the City",
+"ru": "kluch-ot-goroda"
+},
+"the-price-of-Independence": {
+"name": "The Price of Independence",
+"ru": "cena-nezavisimosti"
+},
+"the-punisher": {
+"name": "The Punisher - Part 1",
+"ru": "karatel"
+},
+"the-punisher-part-2": {
+"name": "The Punisher - Part 2",
+"ru": "karatel-chast-2"
+},
+"the-punisher-part-3": {
+"name": "The Punisher - Part 3",
+"ru": "karatel-chast-3"
+},
+"the-punisher-part-4": {
+"name": "The Punisher - Part 4",
+"ru": "karatel-chast-4"
+},
+"the-punisher-part-5": {
+"name": "The Punisher - Part 5",
+"ru": "karatel-chast-5"
+},
+"the-punisher-part-6": {
+"name": "The Punisher - Part 6",
+"ru": "karatel-chast-6"
+},
+"the-secret-recipe": {
+"name": "The Secret Recipe",
+"ru": "tainyi-recept"
+},
+"the-survivalist-path-cold-blooded": {
+"name": "The Survivalist Path - Cold Blooded",
+"ru": "put-vyzhivalshhika-hladnokrovnyj"
+},
+"the-survivalist-path-eagle-owl": {
+"name": "The Survivalist Path - Eagle-Owl",
+"ru": "put-vyzhivalshhika-filin"
+},
+"the-survivalist-path-junkie": {
+"name": "The Survivalist Path - Junkie",
+"ru": "put-vyzhivalshhika-torchok"
+},
+"the-survivalist-path-thrifty": {
+"name": "The Survivalist Path - Thrifty",
+"ru": "put-vyzhivalshhika-zapaslivyj"
+},
+"the-survivalist-path-tough-guy": {
+"name": "The Survivalist Path - Tough Guy",
+"ru": "put-vyzhivalshhika-krepysh"
+},
+"the-survivalist-path-unprotected-but-dangerous": {
+"name": "The Survivalist Path - Unprotected but Dangerous",
+"ru": "put-vyzhivalshhika-bezzashhiten-no-opasen"
+},
+"the-survivalist-path-wounded-beast": {
+"name": "The Survivalist Path - Wounded Beast",
+"ru": "put-vyzhivalshhika-ranenyj-zver"
+},
+"the-survivalist-path-zhivchik": {
+"name": "The Survivalist Path - Zhivchik",
+"ru": "put-vyzhivalshhika-zhivchik"
+},
+"the-tarkov-shooter-part-1": {
+"name": "The Tarkov Shooter - Part 1",
+"ru": "tarkovskij-strelok-chast-1"
+},
+"the-tarkov-shooter-part-2": {
+"name": "The Tarkov Shooter - Part 2",
+"ru": "tarkovskij-strelok-chast-2"
+},
+"the-tarkov-shooter-part-3": {
+"name": "The Tarkov Shooter - Part 3",
+"ru": "tarkovskij-strelok-chast-3"
+},
+"the-tarkov-shooter-part-4": {
+"name": "The Tarkov Shooter - Part 4",
+"ru": "tarkovskij-strelok-chast-4"
+},
+"the-tarkov-shooter-part-5": {
+"name": "The Tarkov Shooter - Part 5",
+"ru": "tarkovskij-strelok-chast-5"
+},
+"the-tarkov-shooter-part-6": {
+"name": "The Tarkov Shooter - Part 6",
+"ru": "tarkovskij-strelok-chast-6"
+},
+"the-tarkov-shooter-part-7": {
+"name": "The Tarkov Shooter - Part 7",
+"ru": "tarkovskij-strelok-chast-7"
+},
+"the-ticket": {
+"name": "The Ticket",
+"ru": "bilet"
+},
+"the-ticket-kerman": {
+"name": "The Ticket. Kerman. \"Savior\"",
+"ru": "bilet-kerman"
+},
+"the-ticket-lightkeeper-stay-in-tarkov": {
+"name": "The Ticket. Lightkeeper. \"Stay in Tarkov\"",
+"ru": "bilet-smotritel-mayaka-ostatsya-v-tarkove"
+},
+"the-ticket-prapor": {
+"name": "The Ticket. Prapor. \"Fallen\"",
+"ru": "bilet-prapor"
+},
+"the-ticket-prapor-fast": {
+"name": "The Ticket. Prapor. Fast ending. \"The Survivor\"",
+"ru": "bilet-prapor-bistro"
+},
+"the-unheard": {
+"name": "The Unheard",
+"ru": "neizvestnye"
+},
+"they-are-already-here": {
+"name": "They Are Already Here — where to find sect notes | Tarkov",
+"ru": "oni-uje-zdes"
+},
+"thirsty-breadwinner": {
+"name": "Thirsty - Breadwinner",
+"ru": "vodohleb-dobitchik"
+},
+"thirsty-delivery": {
+"name": "Thirsty - Delivery",
+"ru": "vodohleb-kurier"
+},
+"thirsty-echo": {
+"name": "Thirsty - Echo",
+"ru": "vodohleb-echo"
+},
+"thirsty-hounds": {
+"name": "Thirsty - Hounds",
+"ru": "vodohleb-isheiki"
+},
+"thirsty-secrets": {
+"name": "Thirsty - Secrets",
+"ru": "vodohleb-sekrety"
+},
+"this-tape-sucks": {
+"name": "This Tape Sucks",
+"ru": "ya-vsegda-s-soboy-beru-videokameru"
+},
+"ties-in-the-north": {
+"name": "Connections Up North",
+"ru": "svyazi-na-severe"
+},
+"tigr-safari": {
+"name": "Tigr Safari",
+"ru": "safari-na-tigra"
+},
+"to-great-heights-1": {
+"name": "To Great Heights! - Part 1 [PVP ZONE]",
+"ru": "vpered-k-vershinam-1"
+},
+"to-great-heights-2": {
+"name": "To Great Heights! - Part 2 [PVP ZONE]",
+"ru": "vpered-k-vershinam-2"
+},
+"to-great-heights-3": {
+"name": "To Great Heights! - Part 3 [PVP ZONE]",
+"ru": "vpered-k-vershinam-3"
+},
+"to-great-heights-4": {
+"name": "To Great Heights! - Part 4 [PVP ZONE]",
+"ru": "vpered-k-vershinam-4"
+},
+"to-great-heights-5": {
+"name": "To Great Heights! - Part 5 [PVP ZONE]",
+"ru": "vpered-k-vershinam-5"
+},
+"to-prepare-for-the-worst": {
+"name": "Hindsight 20/20",
+"ru": "podstelit-solomku"
+},
+"to-the-light-a-time-to-gather-stones": {
+"name": "To the Light - A Time to Gather Stones",
+"ru": "na-svet-vremya-sobirat-kamni"
+},
+"to-the-light-a-time-to-scatter-stones": {
+"name": "To the Light - A Time to Throw Stones",
+"ru": "na-svet-vremya-razbrasyvat-kamni"
+},
+"to-the-light-clip-the-wings": {
+"name": "To the Light - Clip Their Wings",
+"ru": "na-svet-podrezat-krylya"
+},
+"to-the-light-dangerous-ambitions": {
+"name": "To the Light - Dangerous Ambitions",
+"ru": "na-svet-opasnye-ambitsii"
+},
+"to-the-light-fallen-bird": {
+"name": "To the Light - Fallen Bird",
+"ru": "na-svet-pavshaya-ptitsa"
+},
+"to-the-light-false-alarm": {
+"name": "To the Light - False Call",
+"ru": "na-svet-lozhnyy-vyzov"
+},
+"to-the-light-fiasco": {
+"name": "To the Light - Bite the Dust",
+"ru": "na-svet-fiasko"
+},
+"to-the-light-getting-acquainted": {
+"name": "To the Light - Getting Acquainted",
+"ru": "na-svet-novoe-znakomstvo"
+},
+"to-the-light-the-other-side": {
+"name": "To the Light - The Other Side",
+"ru": "na-svet-iznanka"
+},
+"to-the-light-trust-but-verify": {
+"name": "To the Light - Trust but Verify",
+"ru": "na-svet-doveryay-no-proveryay"
+},
+"to-the-light-you-called": {
+"name": "To the Light - Someone Called?",
+"ru": "na-svet-vyzyvali"
+},
+"to-throw-a-wrench-in-the-works": {
+"name": "Stick in the Wheel",
+"ru": "palki-v-kolesa"
+},
+"top-secret": {
+"name": "Top Secret",
+"ru": "sovershenno-sekretno"
+},
+"tour": {
+"name": "Tour",
+"ru": "tur"
+},
+"track-the-shipment": {
+"name": "Shipment Tracking — where to find the shipment list | Tarkov",
+"ru": "otsledit-otpravlenie"
+},
+"tracker": {
+"name": "Tracker",
+"ru": "isheika"
+},
+"trophies": {
+"name": "Trophies",
+"ru": "trofei"
+},
+"trouble-in-the-big-city": {
+"name": "Trouble in the Big City",
+"ru": "gorodskie-razborki"
+},
+"uninvited-guests-part-1-kord-breach": {
+"name": "[KORD BREACH] Uninvited Guests - Part 1",
+"ru": "nezvanie-gosti-chast-1-kord-breach"
+},
+"uninvited-guests-part-2-kord-breach": {
+"name": "[KORD BREACH] Uninvited Guests - Part 2",
+"ru": "nezvanie-gosti-chast-2-kord-breach"
+},
+"updating-the-assortment": {
+"name": "Updating the assortment",
+"ru": "obnovlenie-assortimenta"
+},
+"urban-medicine": {
+"name": "Urban Medicine",
+"ru": "gorodskaya-medicina"
+},
+"viewer-quest": {
+"name": "Viewer",
+"ru": "nabludatel-quest"
+},
+"vitamins": {
+"name": "Vitamins",
+"ru": "vitaminy"
+},
+"walls-have-eyes": {
+"name": "The Walls Have Eyes",
+"ru": "u-sten-est-glaza"
+},
+"war-war-never-changes": {
+"name": "War... war never changes",
+"ru": "vojna-vojna-nikogda-ne-menyaetsya"
+},
+"watching-You": {
+"name": "Watching You",
+"ru": "slejka"
+},
+"weapon-circulation": {
+"name": "Weapons Circulation",
+"ru": "oborot-voorujeniya"
+},
+"wet-job-part-1": {
+"name": "Wet Job - Part 1",
+"ru": "mokroe-delo-chast-1"
+},
+"wet-job-part-2": {
+"name": "Wet Job - Part 2",
+"ru": "mokroe-delo-chast-2"
+},
+"wet-job-part-3": {
+"name": "Wet Job - Part 3",
+"ru": "mokroe-delo-chast-3"
+},
+"wet-job-part-4": {
+"name": "Wet Job - Part 4",
+"ru": "mokroe-delo-chast-4"
+},
+"wet-job-part-5": {
+"name": "Wet Job - Part 5",
+"ru": "mokroe-delo-chast-5"
+},
+"wet-job-part-6": {
+"name": "Wet Job - Part 6",
+"ru": "mokroe-delo-chast-6"
+},
+"whats-in-the-bag-kord-breach": {
+"name": "[KORD BREACH] What's in the Bag?",
+"ru": "chto-v-sumke-kord-breach"
+},
+"whats-on-the-flash-drive": {
+"name": "What’s on the Flash Drive?",
+"ru": "chto-na-fleshke"
+},
+"wolf-in-sheeps-clothing-kord-breach": {
+"name": "[KORD BREACH] Sheep in Wolf's Clothing",
+"ru": "volk-v-ovechiei-shkure-kord-breach"
+},
+"work-smarter": {
+"name": "Work Smarter",
+"ru": "umnyj-v-goru-ne-pojdyot"
+},
+"worst-job-in-the-world": {
+"name": "Worst Job in the World",
+"ru": "hudshaya-rabota-na-svete"
+},
+"you-offered-now-you-cant-back-out": {
+"name": "Stick to It",
+"ru": "nazvalsya-gruzdem"
+},
+"your-car-needs-a-service": {
+"name": "Your Car Needs a Service",
+"ru": "tegosmotr"
+},
+"youve-got-mail": {
+"name": "You've Got Mail",
+"ru": "vam-posylka"
+}
+}
