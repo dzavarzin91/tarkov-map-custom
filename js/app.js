@@ -30,9 +30,9 @@
   // ------------------------------------------------------------------ text
   const T = {
     ru: {
-      brand: "Карты Таркова", search: "Поиск", searchHint: "Выход, ключ, босс…", base: "Подложка",
+      brand: "Карты Таркова", search: "Поиск", looseLoot: "Лут на земле", loose_loot: "Лут на земле", lootItems: "Может быть", lootMore: "и ещё {n}", hideAll: "Скрыть все метки", showAll: "Показать все метки", questSearch: "Квест", questHint: "Название квеста или предмета…", questOnly: "Показаны только метки квеста. Очистите поле, чтобы вернуть остальные.", questNone: "Квестов на этой карте нет", searchHint: "Выход, ключ, босс…", base: "Подложка",
       schematic: "Схема", satellite: "Спутник", level: "Этаж", ground: "Основной",
-      dimOther: "Приглушать метки других этажей", layers: "Метки", panel: "Панель",
+      dimOther: "Только метки выбранного этажа", layers: "Метки", panel: "Панель",
       players: "Игроков", raid: "Рейд", min: "мин", m: "м",
       extract_pmc: "Выходы ЧВК", extract_scav: "Выходы Диких", extract_shared: "Общие выходы",
       extract_transit: "Переходы", spawn_pmc: "Спавны ЧВК", spawn_scav: "Спавны Диких",
@@ -78,9 +78,9 @@
       allFailed: "ни одна карта не загрузилась",
     },
     en: {
-      brand: "Tarkov maps", search: "Search", searchHint: "Extract, key, boss…", base: "Base map",
+      brand: "Tarkov maps", search: "Search", looseLoot: "Loose loot", loose_loot: "Loose loot", lootItems: "Can be", lootMore: "and {n} more", hideAll: "Hide all markers", showAll: "Show all markers", questSearch: "Quest", questHint: "Quest or item name…", questOnly: "Showing only this quest's markers. Clear the field to bring the rest back.", questNone: "No quests on this map", searchHint: "Extract, key, boss…", base: "Base map",
       schematic: "Schematic", satellite: "Satellite", level: "Level", ground: "Ground",
-      dimOther: "Dim markers on other levels", layers: "Markers", panel: "Panel",
+      dimOther: "Only markers of the selected level", layers: "Markers", panel: "Panel",
       players: "Players", raid: "Raid", min: "min", m: "m",
       extract_pmc: "PMC extracts", extract_scav: "Scav extracts", extract_shared: "Shared extracts",
       extract_transit: "Transits", spawn_pmc: "PMC spawns", spawn_scav: "Scav spawns",
@@ -129,10 +129,10 @@
 
   // Marker categories in panel order.
   const CATEGORIES = [
-    { key: "extract_pmc", icon: "extract_pmc", on: true },
-    { key: "extract_shared", icon: "extract_shared", on: true },
-    { key: "extract_scav", icon: "extract_scav", on: true },
-    { key: "extract_transit", icon: "extract_transit", on: true },
+    { key: "extract_pmc", icon: "extract_pmc", on: true, fixed: true },
+    { key: "extract_shared", icon: "extract_shared", on: true, fixed: true },
+    { key: "extract_scav", icon: "extract_scav", on: true, fixed: true },
+    { key: "extract_transit", icon: "extract_transit", on: true, fixed: true },
     { key: "spawn_pmc", icon: "spawn_pmc", on: true },
     { key: "spawn_boss", icon: "spawn_boss", on: true },
     { key: "spawn_scav", icon: "spawn_scav", on: false },
@@ -143,18 +143,20 @@
     { key: "switches", icon: "switch", on: false },
     { key: "hazards", icon: "hazard", on: false },
     { key: "btr", icon: "btr_stop", on: true },
+    { key: "loose_loot", icon: "loose_loot", on: false },
     { key: "quest_item", icon: "quest_item", on: true },
     { key: "quest_zone", icon: "quest_objective", on: false },
-    { key: "labels", icon: null, on: true },
+    { key: "labels", icon: null, on: true, fixed: true },
   ];
 
   // ------------------------------------------------------------------ state
   const saved = loadSettings();
   const state = {
     lang: saved.lang || "ru",
-    base: saved.base || "svg",
+    base: saved.baseChosen && saved.base ? saved.base : "sat", // satellite until the user picks a base themselves
+    baseChosen: !!saved.baseChosen,
     dimOther: saved.dimOther !== false,
-    showNames: saved.showNames !== false,
+    showNames: true, // exit captions are always shown
     visible: Object.assign(
       Object.fromEntries(CATEGORIES.map((c) => [c.key, c.on])),
       saved.visible || {}
@@ -168,6 +170,8 @@
     svgOverlay: null,
     tileBase: null,
     tileLevel: null,
+    quest: null, // selected quest name: only its markers are shown
+    quests: [], // { name, text }
   };
 
   const $ = (id) => document.getElementById(id);
@@ -179,7 +183,7 @@
   function saveSettings() {
     try {
       localStorage.setItem("tarkov-offline-maps", JSON.stringify({
-        lang: state.lang, base: state.base, dimOther: state.dimOther,
+        lang: state.lang, base: state.base, baseChosen: state.baseChosen, dimOther: state.dimOther,
         showNames: state.showNames, visible: state.visible,
       }));
     } catch (e) { /* storage unavailable on file:// in some browsers */ }
@@ -290,6 +294,11 @@
     state.svgEl = state.svgOverlay = state.tileBase = state.tileLevel = null;
     state.markers = [];
     state.groups = {};
+    state.quest = null;
+    state.quests = [];
+    $("questSearch").value = "";
+    $("questResults").innerHTML = "";
+    $("questNote").hidden = true;
 
     const map = L.map("map", {
       crs: getCRS(cfg),
@@ -441,13 +450,13 @@
     return rec;
   }
 
-  function addOutline(cat, outline, color, p, top, bottom) {
+  function addOutline(cat, outline, color, p, top, bottom, quest) {
     outline = list(outline).filter(validPos);
     if (outline.length < 3) return;
     const poly = L.polygon(outline.map(pos), { color, weight: 1, fillOpacity: 0.08, interactive: false, className: "zone-shape" });
     poly.addTo(group(cat));
     const y = (typeof top === "number" && typeof bottom === "number") ? (top + bottom) / 2 : p && p.y;
-    state.markers.push({ cat, shape: poly, level: levelOf(state.cfg, Object.assign({}, p, { y })), search: "" });
+    state.markers.push({ cat, shape: poly, level: levelOf(state.cfg, Object.assign({}, p, { y })), search: "", quest });
   }
 
   function problem(where, e) {
@@ -592,6 +601,17 @@
       } catch (e) { problem("hazards", e); }
     }
 
+    for (const ll of list(md.lootLoose)) {
+      try {
+        const names = Array.isArray(ll.items) ? ll.items : [];
+        const shown = names.slice(0, 15);
+        const rows = ['<div class="pop-row"><b>' + esc(t("lootItems")) + ":</b> " + esc(shown.join(", ")) +
+          (names.length > shown.length ? " " + esc(t("lootMore").replace("{n}", names.length - shown.length)) : "") + "</div>"];
+        add("loose_loot", ll.position, icon("loose_loot"), popup(t("looseLoot"), t("looseLoot"), rows, ll.position), names.join(" "),
+          { icon: "loose_loot", label: t("looseLoot") + ": " + names.slice(0, 3).join(", ") + (names.length > 3 ? "…" : "") });
+      } catch (e) { problem("lootLoose", e); }
+    }
+
     for (const b of list(md.btrStops)) {
       try {
         const p = { x: b.x, y: b.y, z: b.z };
@@ -614,14 +634,17 @@
         if (q.wiki) rows.push(link(q.wiki, t("wiki")));
         const title = q.item || q.quest;
         const search = (q.item ? q.item + " " : "") + q.quest;
+        let entry = state.quests.find((e) => e.name === q.quest);
+        if (!entry) state.quests.push(entry = { name: q.quest, text: "" });
+        entry.text += " " + search.toLowerCase();
         if (q.kind === "find") {
           for (const p of list(q.points)) {
-            add("quest_item", p, icon("quest_item"), popup(title, t("questItem"), rows, p), search, { icon: "quest_item" });
+            add("quest_item", p, icon("quest_item"), popup(title, t("questItem"), rows, p), search, { icon: "quest_item", quest: q.quest });
           }
         } else if (q.zone) {
           const z = q.zone;
-          const rec = add("quest_zone", z.position, icon("quest_objective"), popup(title, t("questPlace"), rows, z.position), search, { icon: "quest_objective" });
-          if (rec) addOutline("quest_zone", z.outline, "#ffd447", z.position, z.top, z.bottom);
+          const rec = add("quest_zone", z.position, icon("quest_objective"), popup(title, t("questPlace"), rows, z.position), search, { icon: "quest_objective", quest: q.quest });
+          if (rec) addOutline("quest_zone", z.outline, "#ffd447", z.position, z.top, z.bottom, q.quest);
         }
       } catch (e) { problem("questMarkers", e); }
     }
@@ -629,18 +652,74 @@
     showGroups();
   }
 
+  // While a quest is selected only its markers stay: other quest items/spots, containers and locks go away.
+  const QUEST_ON = new Set(["quest_item", "quest_zone"]), QUEST_OFF = new Set(["containers", "locks"]);
+  const FIXED = new Set(CATEGORIES.filter((c) => c.fixed).map((c) => c.key));
+  function visibleNow(key) {
+    if (FIXED.has(key)) return true;
+    if (state.quest) { if (QUEST_ON.has(key)) return true; if (QUEST_OFF.has(key)) return false; }
+    return !!state.visible[key];
+  }
   function showGroups() {
-    for (const c of CATEGORIES) if (state.visible[c.key] && state.groups[c.key]) state.groups[c.key].addTo(state.map);
+    for (const c of CATEGORIES) {
+      const g = state.groups[c.key];
+      if (!g) continue;
+      if (visibleNow(c.key)) g.addTo(state.map); else state.map.removeLayer(g);
+    }
+    for (const r of state.markers) {
+      if (r.cat !== "quest_item" && r.cat !== "quest_zone") continue;
+      const layer = r.marker || r.shape, g = state.groups[r.cat];
+      const on = !state.quest || r.quest === state.quest;
+      if (on && !g.hasLayer(layer)) g.addLayer(layer);
+      else if (!on && g.hasLayer(layer)) g.removeLayer(layer);
+    }
+  }
+
+  function selectQuest(name) {
+    state.quest = name || null;
+    $("questSearch").value = name || "";
+    $("questResults").innerHTML = "";
+    $("questNote").hidden = !name;
+    showGroups();
+    renderLayerList();
+    if (!name) return;
+    const mine = state.markers.filter((r) => r.quest === name && r.marker);
+    if (!mine.length) return;
+    state.level = mine[0].level;
+    renderLevels(); renderBase();
+    const b = L.latLngBounds(mine.map((r) => r.marker.getLatLng()));
+    state.map.fitBounds(b.pad(0.3), { maxZoom: state.cfg.maxZoom - 1 });
+    if (window.matchMedia("(max-width: 760px)").matches) setRail(false);
+  }
+
+  function runQuestSearch() {
+    const q = $("questSearch").value.trim().toLowerCase();
+    const ol = $("questResults");
+    ol.innerHTML = "";
+    if (!q) { if (state.quest) selectQuest(null); return; }
+    if (state.quest && state.quest.toLowerCase() !== q) { state.quest = null; $("questNote").hidden = true; showGroups(); renderLayerList(); }
+    if (state.quest) return;
+    const hits = state.quests.filter((e) => e.text.includes(q)).sort((a, b) => a.name.localeCompare(b.name)).slice(0, 30);
+    if (!hits.length) { ol.innerHTML = '<li class="empty">' + esc(state.quests.length ? t("noResults") : t("questNone")) + "</li>"; return; }
+    for (const e of hits) {
+      const li = document.createElement("li");
+      const b = document.createElement("button");
+      b.type = "button";
+      b.innerHTML = '<img src="icons/quest_item.png" alt=""><span>' + esc(e.name) + "</span>";
+      b.addEventListener("click", () => selectQuest(e.name));
+      li.appendChild(b);
+      ol.appendChild(li);
+    }
   }
 
   function applyDimTo(rec) {
-    const off = state.dimOther && rec.level !== state.level;
+    const off = state.dimOther && !rec.isLabel && rec.level !== state.level;
     if (rec.marker) {
       const el = rec.marker.getElement && rec.marker.getElement();
       if (el) el.classList.toggle("off-level-marker", off);
     }
     if (rec.shape) {
-      rec.shape.setStyle(off ? { opacity: 0.2, fillOpacity: 0.02 } : { opacity: 1, fillOpacity: 0.08 });
+      rec.shape.setStyle(off ? { opacity: 0, fillOpacity: 0 } : { opacity: 1, fillOpacity: 0.08 });
     }
   }
   function applyLevelDimming() { for (const r of state.markers) applyDimTo(r); }
@@ -714,29 +793,28 @@
     const counts = {};
     for (const r of state.markers) if (r.marker) counts[r.cat] = (counts[r.cat] || 0) + 1;
     for (const c of CATEGORIES) {
+      if (c.fixed) continue; // always on, not listed
       const li = document.createElement("li");
       const n = counts[c.key] || 0;
       if (!n) li.className = "empty";
-      li.innerHTML = '<label><input type="checkbox"' + (state.visible[c.key] ? " checked" : "") + ">" +
+      li.innerHTML = '<label><input type="checkbox"' + (visibleNow(c.key) ? " checked" : "") + (state.quest && (QUEST_ON.has(c.key) || QUEST_OFF.has(c.key)) ? " disabled" : "") + ">" +
         (c.icon ? '<img src="icons/' + c.icon + '.png" alt="">' : "<span></span>") +
         "<span>" + esc(t(c.key)) + '</span><span class="count">' + n + "</span></label>";
       li.querySelector("input").addEventListener("change", (e) => {
         state.visible[c.key] = e.target.checked;
-        const g = state.groups[c.key];
-        if (g) { if (e.target.checked) g.addTo(state.map); else state.map.removeLayer(g); }
+        showGroups();
         saveSettings();
       });
       ul.appendChild(li);
     }
-    const li = document.createElement("li");
-    li.innerHTML = '<label><input type="checkbox"' + (state.showNames ? " checked" : "") + '><span></span><span>' + esc(t("names")) + "</span><span></span></label>";
-    li.querySelector("input").addEventListener("change", (e) => {
-      state.showNames = e.target.checked;
-      $("map").classList.toggle("hide-names", !state.showNames);
-      saveSettings();
-    });
-    ul.appendChild(li);
-    $("map").classList.toggle("hide-names", !state.showNames);
+    $("map").classList.remove("hide-names");
+  }
+
+  function setAllLayers(on) {
+    for (const c of CATEGORIES) if (!c.fixed) state.visible[c.key] = on;
+    showGroups();
+    renderLayerList();
+    saveSettings();
   }
 
   function renderStatus() {
@@ -900,7 +978,11 @@
       m.transits = asList(m.transits).map((tr) => typeof tr.map === "string"
         ? Object.assign({}, tr, { map: byId[tr.map] ? { name: byId[tr.map].name, normalizedName: byId[tr.map].normalizedName } : null })
         : tr);
-      delete m.lootLoose;
+      m.lootLoose = asList(m.lootLoose).map((ll) => {
+        const names = [];
+        for (const i of ll.items || []) { const n = typeof i === "string" ? table[i + " Name"] : null; if (n && !names.includes(n)) names.push(n); }
+        return ll.position && names.length ? { position: ll.position, items: names } : null;
+      }).filter(Boolean);
       return m;
     });
   }
@@ -1021,7 +1103,7 @@
       b.addEventListener("click", () => {
         if (!state.visible[r.cat]) {
           state.visible[r.cat] = true;
-          state.groups[r.cat].addTo(state.map);
+          showGroups();
           renderLayerList();
           saveSettings();
         }
@@ -1072,11 +1154,15 @@
       });
     }
     for (const b of $("baseSeg").querySelectorAll("button")) {
-      b.addEventListener("click", () => { state.base = b.dataset.base; saveSettings(); renderBase(); });
+      b.addEventListener("click", () => { state.base = b.dataset.base; state.baseChosen = true; saveSettings(); renderBase(); });
     }
     $("dimOther").checked = state.dimOther;
     $("dimOther").addEventListener("change", (e) => { state.dimOther = e.target.checked; saveSettings(); applyLevelDimming(); });
+    $("hideAll").addEventListener("click", () => setAllLayers(false));
+    $("showAll").addEventListener("click", () => setAllLayers(true));
     $("search").addEventListener("input", runSearch);
+    $("questSearch").addEventListener("input", runQuestSearch);
+    $("questSearch").addEventListener("focus", runQuestSearch);
     $("railToggle").addEventListener("click", () => setRail($("rail").classList.contains("collapsed")));
     if (window.matchMedia("(max-width: 760px)").matches) setRail(false);
 

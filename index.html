@@ -25,6 +25,13 @@
     <nav class="map-list" id="mapList" aria-label="Maps"></nav>
 
     <section class="block">
+      <h2 data-i18n="questSearch">Квест</h2>
+      <input type="search" id="questSearch" autocomplete="off" data-i18n-placeholder="questHint" placeholder="Название квеста или предмета…">
+      <ol class="results" id="questResults"></ol>
+      <p class="hint" id="questNote" data-i18n="questOnly" hidden></p>
+    </section>
+
+    <section class="block">
       <h2 data-i18n="search">Поиск</h2>
       <input type="search" id="search" autocomplete="off" data-i18n-placeholder="searchHint" placeholder="Выход, ключ, босс…">
       <ol class="results" id="results"></ol>
@@ -43,11 +50,15 @@
       <h2 data-i18n="level">Этаж</h2>
       <div class="levels" id="levels"></div>
       <p class="hint" id="levelHint"></p>
-      <label class="check small"><input type="checkbox" id="dimOther" checked> <span data-i18n="dimOther">Приглушать метки других этажей</span></label>
+      <label class="check small"><input type="checkbox" id="dimOther" checked> <span data-i18n="dimOther">Только метки выбранного этажа</span></label>
     </section>
 
     <section class="block">
       <h2 data-i18n="layers">Метки</h2>
+      <div class="seg" id="layerAll">
+        <button type="button" id="showAll" data-i18n="showAll">Показать все метки</button>
+        <button type="button" id="hideAll" data-i18n="hideAll">Скрыть все метки</button>
+      </div>
       <ul class="layer-list" id="layerList"></ul>
     </section>
 

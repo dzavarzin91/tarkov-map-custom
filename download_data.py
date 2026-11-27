@@ -272,7 +272,16 @@ def convert_maps(base, table):
                 tr["map"] = {"name": t.get("name"), "normalizedName": t.get("normalizedName")} if t else None
             transits.append(tr)
         m["transits"] = transits
-        m.pop("lootLoose", None)  # loose loot is large and the viewer doesn't show it
+        spots = []
+        for ll in as_list(m.get("lootLoose")):
+            names = []
+            for i in ll.get("items") or []:
+                n = table.get(f"{i} Name") if isinstance(i, str) else None
+                if n and n not in names:
+                    names.append(n)
+            if ll.get("position") and names:
+                spots.append({"position": ll["position"], "items": names})
+        m["lootLoose"] = spots
         out.append(m)
     return out
 

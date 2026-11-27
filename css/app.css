@@ -222,7 +222,7 @@ input[type="search"]::placeholder { color: var(--muted); }
 .mk-named.btr span { color: var(--text); }
 .hide-names .mk-named span { display: none; }
 
-.off-level-marker { opacity: .22; z-index: -9999 !important; }
+.off-level-marker { display: none !important; }
 .dim-off .leaflet-interactive.off-level-shape { stroke-opacity: .2; fill-opacity: .02; }
 
 .place-label { background: none; border: 0; pointer-events: none; }
@@ -252,3 +252,4 @@ input[type="search"]::placeholder { color: var(--muted); }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
+#layerAll { margin-bottom: 8px; }
